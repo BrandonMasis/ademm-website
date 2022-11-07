@@ -4,10 +4,12 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 *::selection{
     background-color: #f0e7ccd0;
+    
 }
 
 :root {
@@ -130,7 +132,7 @@ nav{
     flex: 1;
     width: 1080px;
     max-width: 1080px;
-    margin-top: 3rem;
+    
 }
 
 
@@ -278,34 +280,46 @@ nav{
     user-select: none;
 }
 
+#scrolltest2{
+    height: 6rem;
+}
 
 #beneficios{
+    
     .container{
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 }
+.benefits{
+    height: 60vh;
+    // border: solid red 2px;
+
+    display: grid;
+  
+    align-items: flex-start;
+
+    grid-gap: .8rem;
+  
+    width: 100%;
+}
 
 .benefit-card{
     display: flex;
     align-items: flex-end;
 
-    width: 100%;
-    height: 10rem;
+    cursor: pointer;
 
+    
+    height: 100%;
     border-radius: 20px;
     overflow: hidden;
 
-    // this line
-
-   
-
-    background-size:cover;
 
     background-position: 0px 330px;
 
-    margin-bottom: 1rem;
+   
     
 
     .dark-fade{
@@ -325,55 +339,100 @@ nav{
         font-size: 30px;
     }
 
+    p{
+        color: var(--white);
+        font-family: 'Lato', sans-serif;
+        font-size: 18px;
+    }
+
     
 }
-
+// add :hover again to this 
 .benefit-card:hover{
-    // height: 20rem;
     animation-name: resize;
-    animation-duration: .5s;
+    animation-duration: .6s;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-    height: 20rem;
+     height: 20rem;
+     margin-bottom: -3rem;
+    
 
+   
     .dark-fade{
+         
+        background: linear-gradient(180deg, rgba(0,0,0,0) 48%, rgba(0,0,0,0.5691231343283583) 71%, rgba(0,0,0,1) 100%) !important;
+        width: 100%;
+        height: 100%;
         
-        
+
         h2{
             animation-name: cardTitle;
-            animation-duration: .4s;
+            animation-duration: .5s;
             transition: cubic-bezier(0.075, 0.82, 0.165, 1);
             align-self: flex-start;
-
+            
+        
         }
     }
+
 }
 
 #student-benefits{
-    background-image: url(./images/students-benefits);
-    background-position: 110px -530px;
-    background-size: 90%;
+    background: url(./images/students-benefits);
+    background-position: 0px -530px;
+    background-size: 100%;
 
     .dark-fade{
         background: linear-gradient(90deg, rgb(8, 19, 39) 35%, rgba(77,81,82,0) 100%);
+
     }
+
+    p{
+        display: none;
+    }
+   
 }
 
+#student-benefits:hover{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/students-benefits);
+    background-size: 100%;
+    background-position: 0px -530px;
+}
+
+
 #stablish-benefits{
+    background-size: 100%;
     background-image: url(./images/stablish-benefits);
     background-position: 0px 370px;
     .dark-fade{
         background: linear-gradient(90deg, rgb(4, 7, 14) 35%, rgba(77,81,82,0) 100%);
     }
+
+
 }
+
+#stablish-benefits:hover{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/stablish-benefits);
+    background-size: 100%;
+    background-position: 0px 370px;
+}
+
 
 #improve-benefits{
     background-image: url(./images/improve-benefits);
+    background-size: 100%;
     background-position: 0px 370px;
     .dark-fade{
         background: linear-gradient(90deg, rgb(3, 14, 11) 25%, rgba(77,81,82,0) 100%);
     }
+
+    
 }
 
+#improve-benefits:hover{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/improve-benefits);
+    background-size: 100%;
+    background-position: 0px 370px;
+}
 
 
 @keyframes resize {
@@ -395,5 +454,6 @@ nav{
     }
     100%{
         align-self: flex-start;
+       
     }
 }
