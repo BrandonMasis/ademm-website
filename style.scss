@@ -293,12 +293,16 @@ nav{
     }
 }
 .benefits{
+    max-height: 60vh;
     height: 60vh;
     // border: solid red 2px;
 
     display: grid;
   
     align-items: flex-start;
+    flex-shrink: 1;
+
+    grid-template-rows: repeat(3, 1fr);
 
     grid-gap: .8rem;
   
@@ -311,8 +315,9 @@ nav{
 
     cursor: pointer;
 
-    
     height: 100%;
+    
+    
     border-radius: 20px;
     overflow: hidden;
 
@@ -352,8 +357,9 @@ nav{
     animation-name: resize;
     animation-duration: .6s;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-     height: 20rem;
-     margin-bottom: -3rem;
+    height: 20em;
+    
+     
     
 
    
@@ -437,10 +443,10 @@ nav{
 
 @keyframes resize {
        
-    0%{
-       
-    }
 
+    0%{
+        height: 12rem;
+    }
     100%{
         height: 20rem;
     }
