@@ -337,9 +337,6 @@ nav .nav-bar .logo {
 }
 
 @keyframes resize {
-  0% {
-    height: 10rem;
-  }
   100% {
     height: 20rem;
   }
