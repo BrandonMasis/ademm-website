@@ -377,7 +377,7 @@ nav{
 }
 
 #student-benefits{
-    background: url(./images/students-benefits);
+    background: url(./images/students-benefits.png);
     background-position: 0px -530px;
     background-size: 100%;
 
@@ -393,7 +393,7 @@ nav{
 }
 
 #student-benefits:hover{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/students-benefits);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/students-benefits.png);
     background-size: 100%;
     background-position: 0px -530px;
 }
@@ -418,7 +418,7 @@ nav{
 
 
 #improve-benefits{
-    background-image: url(./images/improve-benefits);
+    background-image: url(./images/improve-benefits.png);
     background-size: 100%;
     background-position: 0px 370px;
     .dark-fade{
@@ -429,7 +429,7 @@ nav{
 }
 
 #improve-benefits:hover{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/improve-benefits);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/improve-benefits.png);
     background-size: 100%;
     background-position: 0px 370px;
 }
