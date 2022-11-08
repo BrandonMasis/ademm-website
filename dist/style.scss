@@ -74,6 +74,8 @@ nav{
     max-width: 100vw;
     overflow: hidden;
 
+    z-index: 5;
+
     padding-top: 1rem;
     padding-bottom: 1rem;
     
@@ -246,6 +248,9 @@ nav{
 .full-btn{
     background-color: var(--accent);
     color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .full-btn:hover{
@@ -522,13 +527,10 @@ nav{
         .full-btn{
             width: max-content;
             font-size: 18px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             gap: 1rem;
 
             i{
-                font-size: 14px;
+                font-size: 15px;
             }
         }
 
@@ -650,6 +652,8 @@ nav{
         font-family: 'Lato', sans-serif;
         color: var(--white);
 
+
+
         
 
         cursor: pointer;
@@ -667,10 +671,18 @@ nav{
         height: min-content;
 
        }
+
     }
 
+    
+    
+    
 }
 
+.show-answer.close{
+ transform: rotate(45deg);
+ z-index: 1;
+}
 
 
 
@@ -691,6 +703,44 @@ nav{
 
 .faq .faq-item:last-child{
     border-bottom: none;
+}
+
+#sobre-nosotros{
+    margin-top: 15rem;
+
+    .left{
+        display: grid;
+        grid-template-rows: 1fr 3fr;
+        flex-direction: column;
+        justify-content: flex-end;
+        
+        .tagline{
+            align-self: start;
+            
+        }
+
+        & div:nth-child(2){
+            align-self:flex-end;
+        }
+
+        h2{
+            margin-bottom: 1.5rem;
+        }
+        p{
+            line-height: 28px;
+        }
+       
+    }
+
+    .right{
+        margin-left: 2rem;
+        
+        
+
+        img{
+            height: 100%;
+        }
+    }
 }
 
 
