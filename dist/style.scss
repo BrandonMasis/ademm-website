@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Condensed:wght@300;400;700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
 
 * {
   box-sizing: border-box;
@@ -19,7 +19,7 @@
   --white:#FFFFFF;
   --darkText: #232323;
   --lightText: #7A7A7A;
-
+--lines:#e9e9e9;
  
 }
 
@@ -47,14 +47,15 @@
 /* font-family: 'DM Serif Text', serif;
 font-family: 'Lato', sans-serif;
 font-family: 'Montserrat', sans-serif;
-font-family: 'Source Sans Pro', sans-serif; */
+font-family: 'Source Sans Pro', sans-serif; 
+font-family: 'Roboto Condensed', sans-serif;*/
 
 body{
     display: flex;
     flex-direction: column;
     align-items: center;
 
-
+    overflow-x: hidden;
     background: linear-gradient(90deg, #FFFFFF -8.39%, rgba(247, 247, 247, 0.96) 107.01%);
     
 }
@@ -108,19 +109,21 @@ nav{
         text-decoration: none;
         color: var(--lightText);
         
-        font-weight: 600;
-        font-size: 15px;
-        font-family: 'Montserrat', sans-serif;
+        font-weight: normal;
+        font-size: 16px;
+        
+        font-family: 'Roboto Condensed', sans-serif;
     }
     .hollow-btn{
         text-decoration: none;
+        cursor: pointer;
         color: var(--darkText);
     
         padding: .5rem 1.3rem;
         margin-left: .7rem;
-        font-weight: 600;
-        font-size: 15px;
-        font-family: 'Montserrat', sans-serif;
+        font-weight: normal;
+        font-size: 16px;
+        font-family: 'Roboto Condensed', sans-serif;
     }
 
 }
@@ -132,12 +135,25 @@ nav{
     flex: 1;
     width: 1080px;
     max-width: 1080px;
-    
+    overflow: hidden;
+}
+
+.section-header{
+    color: var(--darkText);
+    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    word-spacing: -2px;
+    line-height: 40px;
 }
 
 
 #inicio{
     height: 100vh;
+    max-height: 90rem;
+    min-height: 50rem;
+    padding-top: 2vh;
+
     .container{ 
     display: flex;
     justify-content: space-between;
@@ -182,7 +198,7 @@ nav{
 
 
 
-.hero-paragraph{ 
+.p18{ 
     color: var(--lightText);
     font-size: 18px;
     font-family: 'Lato', sans-serif;
@@ -246,9 +262,7 @@ nav{
         user-select: none;
     }
 
-    h2::selection{
-        background-color: #f0e7ccd0;
-    }
+    
     h4{
         font-family: 'Lato', sans-serif;
         font-size: 14px;
@@ -293,8 +307,9 @@ nav{
     }
 }
 .benefits{
-    max-height: 60vh;
-    height: 60vh;
+    min-height: 40rem;
+    max-height: 50rem;
+    height: 58vh;
     // border: solid red 2px;
 
     display: grid;
@@ -304,7 +319,7 @@ nav{
 
     grid-template-rows: repeat(3, 1fr);
 
-    grid-gap: .8rem;
+    grid-gap: 1rem;
   
     width: 100%;
 }
@@ -318,7 +333,7 @@ nav{
     height: 100%;
     
     
-    border-radius: 20px;
+    border-radius: 10px;
     overflow: hidden;
 
 
@@ -330,7 +345,7 @@ nav{
     .dark-fade{
         display: flex;
         align-items: flex-end;
-        padding: 20px;
+        padding: 30px;
         background-color: #232323;
         height: 100%;
         width: 35%;
@@ -348,6 +363,7 @@ nav{
         color: var(--white);
         font-family: 'Lato', sans-serif;
         font-size: 18px;
+        display: none;
     }
 
     
@@ -378,6 +394,10 @@ nav{
             
         
         }
+
+        p{
+            display: flex;
+        }
     }
 
 }
@@ -392,9 +412,7 @@ nav{
 
     }
 
-    p{
-        display: none;
-    }
+    
    
 }
 
@@ -408,7 +426,7 @@ nav{
 #stablish-benefits{
     background-size: 100%;
     background-image: url(./images/stablish-benefits);
-    background-position: 0px 370px;
+    background-position: 0px 470px;
     .dark-fade{
         background: linear-gradient(90deg, rgb(4, 7, 14) 35%, rgba(77,81,82,0) 100%);
     }
@@ -419,7 +437,7 @@ nav{
 #stablish-benefits:hover{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/stablish-benefits);
     background-size: 100%;
-    background-position: 0px 370px;
+    background-position: 0px 470px;
 }
 
 
@@ -441,11 +459,110 @@ nav{
 }
 
 
+
+#aval-internacional,#afiliacion{
+
+    margin-top: 15rem;
+
+    .container{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        max-width: 100vw !important;
+        width: 100vw;
+    }
+
+    .left {
+        margin-right: 3rem;
+        height: 70vh; 
+        overflow: hidden;
+        
+        img{
+         height: 100%;
+        
+               
+        }
+    }
+
+    .right{
+      
+
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+         height: 70vh; 
+        
+        .full-btn{
+            width: max-content;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+
+            i{
+                font-size: 14px;
+            }
+        }
+
+        .content{
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            .tagline{
+                margin-bottom: 4rem;
+            }
+            .section-header{
+                margin-bottom: .8rem;
+            }
+            .p18{
+                margin-bottom: 2rem;
+            }
+
+        }
+
+        
+       
+    }
+}
+
+
+.lines{
+   display: flex;
+   justify-content: space-around;
+   margin-left: 2rem;
+   
+   align-items: flex-end;
+}
+.lines div{
+    background-color: var(--lines);
+    width: 1px;
+}
+.lines div:nth-child(1){
+   
+    height: 45%;
+}
+.lines div:nth-child(2){
+ 
+    height: 85%;
+}
+
+.lines div:nth-child(3){
+    height: 100%;
+}
+
+
+
+
+
+
+
 @keyframes resize {
        
 
     0%{
-        height: 12rem;
+        height: 14rem;
     }
     100%{
         height: 20rem;
