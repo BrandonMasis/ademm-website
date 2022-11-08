@@ -19,13 +19,15 @@
   --white:#FFFFFF;
   --darkText: #232323;
   --lightText: #7A7A7A;
---lines:#e9e9e9;
+  
+  --faq:#625F5F;
+  --lines:#e9e9e9;
  
 }
 
 /* width */
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 10px;
   }
   
   /* Track */
@@ -50,12 +52,16 @@ font-family: 'Montserrat', sans-serif;
 font-family: 'Source Sans Pro', sans-serif; 
 font-family: 'Roboto Condensed', sans-serif;*/
 
+html{
+    width: 100vw;
+}
 body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 
-    overflow-x: hidden;
+  
     background: linear-gradient(90deg, #FFFFFF -8.39%, rgba(247, 247, 247, 0.96) 107.01%);
     
 }
@@ -64,7 +70,9 @@ nav{
     display: flex;
     justify-content: center;
    
-    width: 100%;
+    width: 100vw;
+    max-width: 100vw;
+    overflow: hidden;
 
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -152,11 +160,16 @@ nav{
     height: 100vh;
     max-height: 90rem;
     min-height: 50rem;
-    padding-top: 2vh;
-
-    .container{ 
+   
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    
+    .container{ 
+        display: flex;
+        height: fit-content;
+        justify-content: space-between;
+        padding-bottom: 3rem;
     
         .left{
             display: flex;
@@ -171,6 +184,8 @@ nav{
             display: flex;
             justify-content: flex-end;
             align-items: center;
+
+            
         }
     }
 }
@@ -239,14 +254,19 @@ nav{
 
 .hollow-btn{
     background-color: transparent;
-    color: black;
+    color: var(--darkText);
     border: 1px solid var(--darkText);
-}
+    
+   
+    transition: box-shadow 300ms ease-in-out, color 300ms;
+    
 
-.hollow-btn:hover{
-    background-color: #7a7a7a23;
+    &:hover{
+        background-color: #7a7a7a34;
+        border: 1px solid #838383;
+        
+    }
 }
-
 .hero-stats{
     display: flex;
 }
@@ -263,7 +283,7 @@ nav{
     }
 
     
-    h4{
+    h3{
         font-family: 'Lato', sans-serif;
         font-size: 14px;
         font-weight: 500;
@@ -273,7 +293,7 @@ nav{
 
 
 .tagline{
-
+    cursor: default;
     border-radius: 50px;
     margin-bottom: 2rem;
     width: fit-content;
@@ -403,7 +423,7 @@ nav{
 }
 
 #student-benefits{
-    background: url(./images/students-benefits.png);
+    background: url(./images/students-benefits.webp);
     background-position: 0px -530px;
     background-size: 100%;
 
@@ -417,7 +437,7 @@ nav{
 }
 
 #student-benefits:hover{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/students-benefits.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/students-benefits.webp);
     background-size: 100%;
     background-position: 0px -530px;
 }
@@ -425,7 +445,7 @@ nav{
 
 #stablish-benefits{
     background-size: 100%;
-    background-image: url(./images/stablish-benefits);
+    background-image: url(./images/stablish-benefits.webp);
     background-position: 0px 470px;
     .dark-fade{
         background: linear-gradient(90deg, rgb(4, 7, 14) 35%, rgba(77,81,82,0) 100%);
@@ -435,14 +455,14 @@ nav{
 }
 
 #stablish-benefits:hover{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/stablish-benefits);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/stablish-benefits.webp);
     background-size: 100%;
     background-position: 0px 470px;
 }
 
 
 #improve-benefits{
-    background-image: url(./images/improve-benefits.png);
+    background-image: url(./images/improve-benefits.webp);
     background-size: 100%;
     background-position: 0px 370px;
     .dark-fade{
@@ -453,7 +473,7 @@ nav{
 }
 
 #improve-benefits:hover{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/improve-benefits.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/improve-benefits.webp);
     background-size: 100%;
     background-position: 0px 370px;
 }
@@ -475,9 +495,17 @@ nav{
         margin-right: 3rem;
         height: 70vh; 
         overflow: hidden;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
         
         img{
          height: 100%;
+        
+
+        max-height: 70rem;
+        max-width: 80rem;
         
                
         }
@@ -527,11 +555,13 @@ nav{
     }
 }
 
-
+.container{
+    overflow-y: hidden;
+}
 .lines{
    display: flex;
    justify-content: space-around;
-   margin-left: 2rem;
+   padding-left: 2rem;
    
    align-items: flex-end;
 }
@@ -554,6 +584,114 @@ nav{
 
 
 
+#preguntas-frecuentes{
+    margin-top: 15rem;
+    .container{
+        justify-content: center;
+        align-items: center;
+
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+}
+
+
+.faq{
+    display: flex;
+    flex-direction: column;
+    width: 1080px;
+}
+.faq-item{
+    
+    border-bottom: 2px solid var(--lines);
+    display: grid;
+    grid-template-columns: 7fr 1fr;
+   
+    padding: 2rem;
+    cursor: pointer;
+    width: 100%;
+
+    h3{
+        color: var(--darkText);
+        font-family: 'Lato', sans-serif;
+        font-size: 26px;
+        font-weight: 600;
+        word-spacing: -2px;
+       
+
+    }
+
+    a{
+        text-decoration: underline;
+        font-weight: 600;
+        color: var(--faq);
+    }
+    
+    p{
+        display: none;
+    }
+
+    .show-answer{
+       
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-self: flex-end;
+        user-select: none;
+
+        width: 2.4rem;
+        height: 2.4rem;
+
+        background-color: var(--accent);
+      
+        font-family: 'Lato', sans-serif;
+        color: var(--white);
+
+        
+
+        cursor: pointer;
+        border-radius: 50px;
+       
+        h4{
+        line-height: 0px;
+        height: 100%;
+        
+
+        font-weight: 800;
+        
+        font-size: 32px;
+        font-weight: 100;
+        height: min-content;
+
+       }
+    }
+
+}
+
+
+
+
+.faq-item.open{
+    background-color: #cacaca1c;
+    background: linear-gradient(0deg, rgba(224, 224, 224, 0.226) 0%, rgba(134, 133, 133, 0.034) 100%);
+    h3{
+        margin-bottom: 1rem;
+    }
+    p{
+        display: block; 
+        font-family: 'Source Sans Pro', sans-serif; 
+        font-size: 18px;
+        font-weight: 300;
+        color: var(--faq);
+    }
+}
+
+.faq .faq-item:last-child{
+    border-bottom: none;
+}
 
 
 
