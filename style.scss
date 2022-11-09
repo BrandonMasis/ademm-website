@@ -157,7 +157,7 @@ nav{
         cursor: pointer;
         background-color: var(--accent);
         border: none;
-        border-radius: 50px;
+        
         
         padding: .5rem 1.3rem;
         margin-left: .7rem;
@@ -212,7 +212,7 @@ nav{
         .left{
             display: flex;
             flex-direction: column;
-            width: 33rem;
+            width: 30rem;
         
             justify-content: flex-end;
             padding-bottom: 3rem;
@@ -236,11 +236,11 @@ nav{
 
 .hero-heading{
     font-family: 'DM Serif Text', serif;
-    font-size: 46px;
+    font-size: 43px;
     font-weight: normal;
 
-    line-height: 2.8rem;
-    margin-bottom: 1rem;
+    line-height: 3rem;
+    margin-bottom: .8rem;
     
     span{
         color:  var(--accent); 
@@ -261,7 +261,7 @@ nav{
     font-weight: 400;
     line-height: 1.7rem;
 
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
     width: 28rem;
 
 
