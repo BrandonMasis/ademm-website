@@ -115,7 +115,7 @@ nav{
             justify-content: center;
             
             img{
-                width: 4.5rem;
+                width: 5.2rem;
                 height: 4.5rem;
             }
           
@@ -147,10 +147,17 @@ nav{
         
         font-family: 'Roboto Condensed', sans-serif;
     }
-    .hollow-btn{
+
+    a:hover{
+       border-bottom: 2px solid rgb(197, 197, 197);
+    }
+
+    .full-btn{
         text-decoration: none;
         cursor: pointer;
-        
+        background-color: var(--accent);
+        border: none;
+        border-radius: 50px;
         
         padding: .5rem 1.3rem;
         margin-left: .7rem;
@@ -158,8 +165,10 @@ nav{
         font-size: 16px;
         font-family: 'Roboto Condensed', sans-serif;
 
-        a{
-            color: var(--darkText) !important;
+        color: var(--white) !important;
+        
+        &:hover{
+            border-bottom: 0px;
         }
     }
 
@@ -203,7 +212,7 @@ nav{
         .left{
             display: flex;
             flex-direction: column;
-            width: 45rem;
+            width: 33rem;
         
             justify-content: flex-end;
             padding-bottom: 3rem;
@@ -227,7 +236,7 @@ nav{
 
 .hero-heading{
     font-family: 'DM Serif Text', serif;
-    font-size: 42px;
+    font-size: 46px;
     font-weight: normal;
 
     line-height: 2.8rem;
@@ -268,9 +277,9 @@ nav{
 
 
 .btn{
-    padding: 1.1rem 2.1rem;
+    padding: 1rem 2rem;
     font-family: 'Lato', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     cursor: pointer;
     user-select: none;
 }
@@ -382,7 +391,7 @@ nav{
 .benefit-card{
     display: flex;
     align-items: flex-end;
-
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     cursor: pointer;
 
     height: 100%;
@@ -406,6 +415,22 @@ nav{
         width: 35%;
         background: rgb(0,0,0);
         background: linear-gradient(90deg, rgb(22, 22, 22) 65%, rgba(77,81,82,0) 100%);
+    
+    
+        &>div:nth-child(2){
+            
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            gap: 1rem;
+
+            &>div:nth-child(1){
+                padding-left: 0px;
+                border-left: none;
+            }
+        }
+    
+    
     }
     
     h2{   
@@ -421,8 +446,41 @@ nav{
         display: none;
     }
 
+    .line{
+        display: none;
+        height: 6rem;
+        background-color: rgba(172, 172, 172, 0.432);
+        width: 1px;
+    }
+}
+
+.card-item{
+    color: white;
+    display: flex;
+ 
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    height: 6rem;
+    padding-left: 10px;
+
+    
+    h3{
+        font-family: 'Lato', sans-serif;
+        font-size: 16px;
+        text-transform: uppercase;
+
+    }
+
+    i{
+        font-size: 20px;
+    }
     
 }
+
+
 // add :hover again to this 
 .benefit-card:hover{
     animation-name: resize;
@@ -439,6 +497,11 @@ nav{
         background: linear-gradient(180deg, rgba(0,0,0,0) 48%, rgba(0,0,0,0.5691231343283583) 71%, rgba(0,0,0,1) 100%) !important;
         width: 100%;
         height: 100%;
+        padding: 50px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+
         
 
         h2{
@@ -446,6 +509,7 @@ nav{
             animation-duration: .5s;
             transition: cubic-bezier(0.075, 0.82, 0.165, 1);
             align-self: flex-start;
+            margin-bottom: .2rem;
             
         
         }
@@ -453,9 +517,27 @@ nav{
         p{
             display: flex;
         }
+
+        .card-item{
+            display: flex;
+            animation-name: cardTitle;
+            animation-duration: .5s;
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+            align-self: flex-start;
+        }
+
+        .line{
+            display: flex;
+            animation-name: cardTitle;
+            animation-duration: .5s;
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+            align-self: flex-start;
+        }
     }
 
 }
+
+
 
 #student-benefits{
     background: url(./images/students-benefits.webp);
@@ -513,7 +595,11 @@ nav{
     background-position: 0px 370px;
 }
 
-
+#aval-internacional{
+    .section-header{
+        width: 32rem;
+    }
+}
 
 #aval-internacional,#afiliacion{
 
@@ -558,11 +644,12 @@ nav{
         
         .full-btn{
             width: max-content;
+            
             font-size: 18px;
-            gap: 1rem;
+            gap: 1.1rem;
 
             i{
-                font-size: 15-px;
+                font-size: 15px;
             }
         }
 
@@ -586,6 +673,14 @@ nav{
 
         
        
+    }
+}
+
+#afiliacion{
+    .full-btn{
+        i{
+            font-size: 18px !important;
+        }
     }
 }
 
@@ -638,7 +733,7 @@ nav{
 }
 .faq-item{
     
-    border-bottom: 2px solid var(--lines);
+    border-bottom: 1px solid var(--lines);
     display: grid;
     grid-template-columns: 7fr 1fr;
 
@@ -722,7 +817,7 @@ nav{
 
 .faq-item.open{
     background-color: #cacaca1c;
-    background: linear-gradient(0deg, rgba(224, 224, 224, 0.226) 0%, rgba(134, 133, 133, 0.034) 100%);
+    background: linear-gradient(0deg, rgba(224, 224, 224, 0.116) 0%, rgba(134, 133, 133, 0.034) 100%);
     h3{
         margin-bottom: 1rem;
     }
@@ -789,10 +884,11 @@ nav{
 .footer-header{
     color: var(--footer-header);
     font-family: 'Lato', sans-serif;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
     word-spacing: -2px;
     line-height: 40px;
+    
 
     margin-bottom: .5rem;
 }
@@ -815,6 +911,7 @@ footer{
     justify-content: center;
     margin-top: 20rem;
     height: 25rem;
+   border-top: 1px rgba(85, 84, 84, 0.048) solid;
 
     .container{
         flex-direction: column;
@@ -839,6 +936,8 @@ footer{
         flex-direction: column;
         border-right: 1px solid var(--footer-lines);
         height: 13rem;
+
+        justify-content: space-between;
         
     }
     
@@ -852,7 +951,7 @@ footer{
         .hollow-btn{
             display: flex;
             justify-content: center;
-            align-items: c;
+            align-items: center;
 
             font-size: 16px;
             color: var(--footer-text);
@@ -904,10 +1003,21 @@ footer{
 
         &>div:nth-child(2){
            display: flex;
-           align-items: center;
-           gap: 5px;
-           margin-bottom: 1rem;
+           flex-direction: column;
+           justify-content: space-between;
+          
+           height: 100%;
+          
            
+         
+
+
+        }
+        .footer-contact{
+            display: flex;
+            
+            align-items: center;
+            gap: 5px;
             i{
                 color: var(--lightText);
             }
@@ -915,18 +1025,22 @@ footer{
            p{
             margin-bottom: 2px;
            }
-
-
         }
         
-        &>div:nth-child(3){
-            font-size: 50px;
+        .footer-social{
+            
             display: flex;
             gap: 10px;
             cursor: pointer;
             
+
             a{
-                color: var(--footer-text);
+                color: var(--lightText);
+                font-size: 0;
+
+                i{
+                    font-size: 50px;
+                }
             }
 
         }

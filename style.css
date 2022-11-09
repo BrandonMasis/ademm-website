@@ -91,7 +91,7 @@ nav .nav-bar .logo {
   justify-content: center;
 }
 nav .nav-bar .logo img {
-  width: 4.5rem;
+  width: 5.2rem;
   height: 4.5rem;
 }
 
@@ -109,17 +109,24 @@ nav .nav-bar .logo img {
   font-size: 16px;
   font-family: "Roboto Condensed", sans-serif;
 }
-.nav-links .hollow-btn {
+.nav-links a:hover {
+  border-bottom: 2px solid rgb(197, 197, 197);
+}
+.nav-links .full-btn {
   text-decoration: none;
   cursor: pointer;
+  background-color: var(--accent);
+  border: none;
+  border-radius: 50px;
   padding: 0.5rem 1.3rem;
   margin-left: 0.7rem;
   font-weight: normal;
   font-size: 16px;
   font-family: "Roboto Condensed", sans-serif;
+  color: var(--white) !important;
 }
-.nav-links .hollow-btn a {
-  color: var(--darkText) !important;
+.nav-links .full-btn:hover {
+  border-bottom: 0px;
 }
 
 .container {
@@ -155,7 +162,7 @@ nav .nav-bar .logo img {
 #inicio .container .left {
   display: flex;
   flex-direction: column;
-  width: 45rem;
+  width: 33rem;
   justify-content: flex-end;
   padding-bottom: 3rem;
 }
@@ -170,7 +177,7 @@ nav .nav-bar .logo img {
 
 .hero-heading {
   font-family: "DM Serif Text", serif;
-  font-size: 42px;
+  font-size: 46px;
   font-weight: normal;
   line-height: 2.8rem;
   margin-bottom: 1rem;
@@ -199,9 +206,9 @@ nav .nav-bar .logo img {
 }
 
 .btn {
-  padding: 1.1rem 2.1rem;
+  padding: 1rem 2rem;
   font-family: "Lato", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   cursor: pointer;
   user-select: none;
 }
@@ -292,6 +299,7 @@ nav .nav-bar .logo img {
 .benefit-card {
   display: flex;
   align-items: flex-end;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   cursor: pointer;
   height: 100%;
   border-radius: 10px;
@@ -308,6 +316,16 @@ nav .nav-bar .logo img {
   background: rgb(0, 0, 0);
   background: linear-gradient(90deg, rgb(22, 22, 22) 65%, rgba(77, 81, 82, 0) 100%);
 }
+.benefit-card .dark-fade > div:nth-child(2) {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  gap: 1rem;
+}
+.benefit-card .dark-fade > div:nth-child(2) > div:nth-child(1) {
+  padding-left: 0px;
+  border-left: none;
+}
 .benefit-card h2 {
   color: var(--white);
   font-family: "Lato", sans-serif;
@@ -318,6 +336,31 @@ nav .nav-bar .logo img {
   font-family: "Lato", sans-serif;
   font-size: 18px;
   display: none;
+}
+.benefit-card .line {
+  display: none;
+  height: 6rem;
+  background-color: rgba(172, 172, 172, 0.432);
+  width: 1px;
+}
+
+.card-item {
+  color: white;
+  display: flex;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  height: 6rem;
+  padding-left: 10px;
+}
+.card-item h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.card-item i {
+  font-size: 20px;
 }
 
 .benefit-card:hover {
@@ -330,15 +373,34 @@ nav .nav-bar .logo img {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 48%, rgba(0, 0, 0, 0.5691231343) 71%, rgb(0, 0, 0) 100%) !important;
   width: 100%;
   height: 100%;
+  padding: 50px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 .benefit-card:hover .dark-fade h2 {
   animation-name: cardTitle;
   animation-duration: 0.5s;
   transition: cubic-bezier(0.075, 0.82, 0.165, 1);
   align-self: flex-start;
+  margin-bottom: 0.2rem;
 }
 .benefit-card:hover .dark-fade p {
   display: flex;
+}
+.benefit-card:hover .dark-fade .card-item {
+  display: flex;
+  animation-name: cardTitle;
+  animation-duration: 0.5s;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  align-self: flex-start;
+}
+.benefit-card:hover .dark-fade .line {
+  display: flex;
+  animation-name: cardTitle;
+  animation-duration: 0.5s;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  align-self: flex-start;
 }
 
 #student-benefits {
@@ -386,6 +448,10 @@ nav .nav-bar .logo img {
   background-position: 0px 370px;
 }
 
+#aval-internacional .section-header {
+  width: 32rem;
+}
+
 #aval-internacional, #afiliacion {
   margin-top: 15rem;
 }
@@ -416,10 +482,10 @@ nav .nav-bar .logo img {
 #aval-internacional .right .full-btn, #afiliacion .right .full-btn {
   width: max-content;
   font-size: 18px;
-  gap: 1rem;
+  gap: 1.1rem;
 }
 #aval-internacional .right .full-btn i, #afiliacion .right .full-btn i {
-  font-size: 15-px;
+  font-size: 15px;
 }
 #aval-internacional .right .content, #afiliacion .right .content {
   max-width: 100%;
@@ -435,6 +501,10 @@ nav .nav-bar .logo img {
 }
 #aval-internacional .right .content .p18, #afiliacion .right .content .p18 {
   margin-bottom: 2rem;
+}
+
+#afiliacion .full-btn i {
+  font-size: 18px !important;
 }
 
 .lines {
@@ -477,7 +547,7 @@ nav .nav-bar .logo img {
 }
 
 .faq-item {
-  border-bottom: 2px solid var(--lines);
+  border-bottom: 1px solid var(--lines);
   display: grid;
   grid-template-columns: 7fr 1fr;
   padding: 2rem;
@@ -529,7 +599,7 @@ nav .nav-bar .logo img {
 
 .faq-item.open {
   background-color: rgba(202, 202, 202, 0.1098039216);
-  background: linear-gradient(0deg, rgba(224, 224, 224, 0.226) 0%, rgba(134, 133, 133, 0.034) 100%);
+  background: linear-gradient(0deg, rgba(224, 224, 224, 0.116) 0%, rgba(134, 133, 133, 0.034) 100%);
 }
 .faq-item.open h3 {
   margin-bottom: 1rem;
@@ -584,7 +654,7 @@ nav .nav-bar .logo img {
 .footer-header {
   color: var(--footer-header);
   font-family: "Lato", sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
   word-spacing: -2px;
   line-height: 40px;
@@ -607,6 +677,7 @@ footer {
   justify-content: center;
   margin-top: 20rem;
   height: 25rem;
+  border-top: 1px rgba(85, 84, 84, 0.048) solid;
 }
 footer .container {
   flex-direction: column;
@@ -627,6 +698,7 @@ footer .content > div {
   flex-direction: column;
   border-right: 1px solid var(--footer-lines);
   height: 13rem;
+  justify-content: space-between;
 }
 footer .left {
   padding-right: 2rem;
@@ -634,7 +706,7 @@ footer .left {
 footer .left .hollow-btn {
   display: flex;
   justify-content: center;
-  align-items: c;
+  align-items: center;
   font-size: 16px;
   color: var(--footer-text);
   border: 1px solid var(--footer-text);
@@ -667,24 +739,32 @@ footer .right {
 }
 footer .right > div:nth-child(2) {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+footer .right .footer-contact {
+  display: flex;
   align-items: center;
   gap: 5px;
-  margin-bottom: 1rem;
 }
-footer .right > div:nth-child(2) i {
+footer .right .footer-contact i {
   color: var(--lightText);
 }
-footer .right > div:nth-child(2) p {
+footer .right .footer-contact p {
   margin-bottom: 2px;
 }
-footer .right > div:nth-child(3) {
-  font-size: 50px;
+footer .right .footer-social {
   display: flex;
   gap: 10px;
   cursor: pointer;
 }
-footer .right > div:nth-child(3) a {
-  color: var(--footer-text);
+footer .right .footer-social a {
+  color: var(--lightText);
+  font-size: 0;
+}
+footer .right .footer-social a i {
+  font-size: 50px;
 }
 
 .copyright {
