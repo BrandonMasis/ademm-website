@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Condensed:wght@300;400;700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Lato:wght@300;400;700&family=Nunito+Sans:wght@400;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap");
 * {
   box-sizing: border-box;
   padding: 0;
@@ -15,7 +15,7 @@
   --dark-accent:#d82121;
   --light-accent:#E73B3B;
   --white:#FFFFFF;
-  --darkText: #232323;
+  --darkText: #272727;
   --lightText: #7A7A7A;
   --faq:#625F5F;
   --lines:#e9e9e9;
@@ -47,9 +47,9 @@
 
 /* font-family: 'DM Serif Text', serif;
 font-family: 'Lato', sans-serif;
-font-family: 'Montserrat', sans-serif;
+font-family: 'Nunito Sans', sans-serif;
 font-family: 'Source Sans Pro', sans-serif; 
-font-family: 'Roboto Condensed', sans-serif;*/
+*/
 body {
   display: flex;
   flex-direction: column;
@@ -74,7 +74,6 @@ nav {
   z-index: 5;
   padding-top: 0.5rem;
   padding-bottom: 5px;
-  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.15);
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.8470588235) -8.39%, rgba(247, 247, 247, 0.774) 107.01%);
   backdrop-filter: blur(20.5px);
   -webkit-backdrop-filter: blur(20.5px);
@@ -91,7 +90,7 @@ nav .nav-bar .logo {
   justify-content: center;
 }
 nav .nav-bar .logo img {
-  width: 5.2rem;
+  width: 5.5rem;
   height: 4.5rem;
 }
 
@@ -107,7 +106,8 @@ nav .nav-bar .logo img {
   color: var(--lightText);
   font-weight: normal;
   font-size: 16px;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
 }
 .nav-links a:hover {
   border-bottom: 2px solid rgb(197, 197, 197);
@@ -119,9 +119,9 @@ nav .nav-bar .logo img {
   border: none;
   padding: 0.5rem 1.3rem;
   margin-left: 0.7rem;
-  font-weight: normal;
+  font-weight: 600;
   font-size: 16px;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   color: var(--white) !important;
 }
 .nav-links .full-btn:hover {
@@ -171,7 +171,9 @@ nav .nav-bar .logo img {
   align-items: center;
 }
 #inicio .container .right img {
-  width: 30rem;
+  height: 80vh;
+  max-height: 35rem;
+  width: 100%;
 }
 
 .hero-heading {
@@ -180,12 +182,13 @@ nav .nav-bar .logo img {
   font-weight: normal;
   line-height: 3rem;
   margin-bottom: 0.8rem;
+  color: var(--darkText);
 }
 .hero-heading span {
   color: var(--accent);
 }
 .hero-heading span::selection {
-  color: var(--darkText);
+  color: var(--footer-header);
 }
 
 .p18 {
@@ -218,6 +221,8 @@ nav .nav-bar .logo img {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: 600;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .full-btn:hover {
@@ -263,9 +268,11 @@ nav .nav-bar .logo img {
   margin-bottom: 2rem;
   width: fit-content;
   background-color: transparent;
-  border: 1px solid var(--darkText);
-  font-family: "Lato", sans-serif;
-  padding: 0.2rem 2rem;
+  border: 1px solid var(--faq);
+  color: var(--footer-text);
+  font-weight: 600;
+  font-family: "Nunito Sans", sans-serif;
+  padding: 0.2rem 1.8rem;
 }
 
 .right img {
@@ -308,7 +315,7 @@ nav .nav-bar .logo img {
 .benefit-card .dark-fade {
   display: flex;
   align-items: flex-end;
-  padding: 30px;
+  padding: 30px 50px;
   background-color: #232323;
   height: 100%;
   width: 35%;
