@@ -120,11 +120,20 @@ nav{
             }
           
         }
+
+        .burguer-menu{
+        color: var(--white);
+        font-size: 2rem;
+        cursor: pointer;
+        display: flex;
+    }
     }
 
 }
 
-
+.mobile-hero-image{
+    display: none;
+}
 
 .nav-links{
     display: flex;
@@ -201,6 +210,9 @@ nav{
     line-height: 40px;
 }
 
+.mobile-stats{
+    display: none;
+}
 
 #inicio{
     height: 100vh;
@@ -1096,3 +1108,678 @@ footer{
        
     }
 }
+
+
+@media screen and (max-width: 1080px) {
+    
+    nav{
+        
+        .nav-bar{
+            max-width: 820px;
+
+        }
+
+        
+    }
+    .container{
+        max-width: 820px;
+  
+        
+    }
+
+    .section-header{
+        font-size: 35px;
+        width: 25rem;
+    }
+
+    #inicio{
+        .container{
+            gap: 1rem;
+            
+            
+           
+            .right{
+    
+    
+                img{
+                    height: 100%;
+                   
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+
+
+    .hero-heading{
+        font-size: 38px;
+    }
+
+    .p18{ 
+        color: var(--lightText);
+        font-size: 16px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        line-height: 1.7rem;
+    
+        margin-bottom: 1.2rem;
+        width: 26rem;
+    
+    }
+
+    #beneficios{
+    
+        .benefit-card{
+            .dark-fade{
+                width: 45%;
+            }
+
+            h2{
+                font-size: 26px;
+                
+            }
+
+            p{
+                font-size: 16px;
+            }
+
+            .card-item{
+                h3{
+                    font-size: 14px;
+                }
+                
+            }
+        }
+
+        .benefit-card:hover{
+            .dark-fade{
+                width: 100%;
+            }
+        }
+    }
+
+    #aval-internacional,#afiliacion{
+
+        margin-top: 8rem;
+    
+        .right{
+          
+    
+            display: grid;
+            grid-template-columns: 50% 50%;
+    
+             height: 70vh; 
+            
+            .full-btn{
+                width: max-content;
+                
+                font-size: 16px;
+                gap: 1.1rem;
+    
+                i{
+                    font-size: 15px;
+                }
+            }
+
+            .lines{
+                display: none;
+            }
+    
+           
+        }
+    }
+
+    #sobre-nosotros{
+        margin-top: 10rem;
+
+        .container{
+            gap: 1rem;
+        }
+
+        .right{
+        
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            
+            
+    
+            img{
+                height: 100%;
+                width: 22rem;
+            }
+        }
+    }
+
+    footer{
+        .content{
+            max-width: 820px;
+        }
+    }
+  }
+
+
+@media screen and (max-width: 1080px) {
+    
+    nav{
+        
+        .nav-bar{
+            max-width: 820px;
+
+        }
+    }
+    .container{
+        max-width: 820px;
+  
+        
+    }
+
+    .section-header{
+        font-size: 35px;
+        width: 25rem;
+    }
+
+    #inicio{
+        .container{
+            gap: 1rem;
+            
+            
+           
+            .right{
+    
+    
+                img{
+                    height: 100%;
+                   
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+
+
+    .hero-heading{
+        font-size: 38px;
+    }
+
+    .p18{ 
+        color: var(--lightText);
+        font-size: 16px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        line-height: 1.7rem;
+    
+        margin-bottom: 1.2rem;
+        width: 26rem;
+    
+    }
+
+    #beneficios{
+    
+        .benefit-card{
+            .dark-fade{
+                width: 45%;
+            }
+
+            h2{
+                font-size: 26px;
+                
+            }
+
+            p{
+                font-size: 16px;
+            }
+
+            .card-item{
+                h3{
+                    font-size: 14px;
+                }
+                
+            }
+        }
+
+        .benefit-card:hover{
+            .dark-fade{
+                width: 100%;
+            }
+        }
+    }
+
+    #aval-internacional,#afiliacion{
+
+        margin-top: 8rem;
+    
+        .right{
+          
+    
+            display: grid;
+            grid-template-columns: 50% 50%;
+    
+             height: 70vh; 
+            
+            .full-btn{
+                width: max-content;
+                
+                font-size: 16px;
+                gap: 1.1rem;
+    
+                i{
+                    font-size: 15px;
+                }
+            }
+
+            .lines{
+                display: none;
+            }
+    
+           
+        }
+    }
+
+    #sobre-nosotros{
+        margin-top: 10rem;
+
+        .container{
+            gap: 1rem;
+        }
+
+        .right{
+        
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            
+            
+    
+            img{
+                height: 100%;
+                width: 22rem;
+            }
+        }
+    }
+
+    footer{
+        .content{
+            max-width: 820px;
+        }
+    }
+  } 
+
+@media screen and (max-width: 850px) {
+    
+    
+    .container{
+        max-width: 800px;
+        padding: 0rem 1rem;
+  
+        
+    }
+
+    nav{
+        .nav-bar{
+            max-width: 800px;
+            padding: 0rem 1rem;
+        }
+    }
+
+    #inicio{
+        .container{
+            gap: 1rem;
+            
+        
+            .right{
+    
+    
+                img{
+                    height: 100%;
+                   
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+
+
+    .hero-heading{
+        font-size: 32px !important;
+        line-height: 2.4rem;
+    }
+
+    .p18{ 
+        color: var(--lightText);
+        font-size: 16px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        line-height: 1.7rem;
+    
+        margin-bottom: 1.2rem;
+        width: 25rem;
+    
+    }
+
+    #aval-internacional,#afiliacion{
+        .container{
+            padding: 0;
+        }
+    }
+
+    #student-benefits{
+      
+        background-position: 0px -300px !important;
+       
+        
+       
+    }
+    
+    #student-benefits:hover{
+        
+        background-position: 0px -300px !important;
+    }
+    
+    
+    #stablish-benefits{
+       
+        background-position: 0px 400px;
+       
+    
+    
+    }
+    
+    #stablish-benefits:hover{
+  
+        background-position: 0px 400px;
+    }
+    
+    
+    #improve-benefits{
+       
+        background-position: 0px 350px;
+          
+    }
+    
+    #improve-benefits:hover{
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/improve-benefits.webp);
+        background-size: 100%;
+        background-position: 0px 350px;
+    }
+    
+
+    footer{
+        .content{
+            padding: 0rem 1rem;
+            max-width: 800px;
+        }
+    }
+  } 
+
+
+//   tablet
+
+@media screen and (max-width: 768px) {
+    
+    nav{
+        position: absolute;
+        padding: 0;
+        height: 25vh;
+        min-height: 13rem;
+       
+
+        .nav-bar{
+            max-width: 768px;
+            display: grid;
+            
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: 100%;
+            overflow: hidden;
+
+            .logo{
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                margin-top: 2rem;
+
+                img{
+                    width: 6rem;
+                    height: auto;
+                }
+            }
+
+        }
+
+        .nav-links{
+            display: none;
+        }
+
+        background: var(--accent);
+      
+    }
+    
+    .burguer-menu{
+        
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+        height: 100%;
+    }
+
+    .mobile-hero-image{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+        img{
+            padding-top: 5rem;
+            height: 19rem !important;
+          
+        }
+
+        
+    }
+
+    .container{
+        max-width: 768px;
+  
+        
+    }
+
+    .section-header{
+        font-size: 35px;
+        width: 25rem;
+    }
+
+    #inicio{
+        height: 7vh;
+        margin-top: 25vh;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+
+
+        .container{
+            gap: 1rem;
+            
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+           
+            .right{
+    
+    
+                img{
+                  
+                   
+                    display: none;
+                }
+            }
+
+            .left{
+                margin-top: 2rem;
+                 width: 100%;
+                 justify-content: center;
+                 align-items: center;
+
+                 .hero-heading{
+                    width: 23rem;
+                    text-align: center;
+                 }
+
+                 .p18{
+                    width: 25rem;
+                    text-align: center;
+                    
+                 }
+
+                 .hero-stats{
+                    display: none;
+                 }
+
+                }
+                .mobile-stats{
+                   display: flex;
+                   flex-direction: row;
+                   gap: 1rem;
+                  
+                }
+
+                .mobile-stat{
+                    border-left: 1px solid gray;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .stat-icon{
+                    background-color: var(--accent);
+                    width: 4rem;
+                    height: 4rem;
+                    border-radius: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: var(--white);
+                    font-size: 1.7rem;
+                }
+
+                .stat-text{
+                    font-size: 16px;
+                    text-align: center;
+                    font-family: 'Lato', sans-serif;
+                    font-weight: bolder;
+                    text-transform: uppercase;
+                    line-height: 1.5rem;
+                }
+        }
+
+    }
+
+
+    .hero-heading{
+        font-size: 38px;
+    }
+
+    .p18{ 
+        color: var(--lightText);
+        font-size: 16px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        line-height: 1.7rem;
+    
+        margin-bottom: 1.2rem;
+        width: 26rem;
+    
+    }
+
+    #beneficios{
+    
+        .benefit-card{
+            .dark-fade{
+                width: 45%;
+            }
+
+            h2{
+                font-size: 26px;
+                
+            }
+
+            p{
+                font-size: 16px;
+            }
+
+            .card-item{
+                h3{
+                    font-size: 14px;
+                }
+                
+            }
+        }
+
+        .benefit-card:hover{
+            .dark-fade{
+                width: 100%;
+            }
+        }
+    }
+
+    #aval-internacional,#afiliacion{
+
+        margin-top: 8rem;
+    
+        .right{
+          
+    
+            display: grid;
+            grid-template-columns: 50% 50%;
+    
+             height: 70vh; 
+            
+            .full-btn{
+                width: max-content;
+                
+                font-size: 16px;
+                gap: 1.1rem;
+    
+                i{
+                    font-size: 15px;
+                }
+            }
+
+            .lines{
+                display: none;
+            }
+    
+           
+        }
+    }
+
+    #sobre-nosotros{
+        margin-top: 10rem;
+
+        .container{
+            gap: 1rem;
+        }
+
+        .right{
+        
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            
+            
+    
+            img{
+                height: 100%;
+                width: 22rem;
+            }
+        }
+    }
+
+    footer{
+        .content{
+            max-width: 820px;
+        }
+    }
+  } 
