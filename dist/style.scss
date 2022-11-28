@@ -138,13 +138,15 @@ nav{
 
         color: var(--darkText);
         opacity: 90%;
-        padding: .3rem .6rem;
-    
+        padding: .3rem .7rem;
+        border-radius: 50px;
+      
+        transition: .2s ease background-color;
     }
 
     a:hover{
-       background-color: rgba(189, 189, 189, 0.144);
-       border-radius: 50px;
+        background-color: rgba(189, 189, 189, 0.144);
+    
        opacity: 100%;
     }
 
@@ -156,6 +158,7 @@ nav{
         text-decoration: none;
         padding: .5rem 1.3rem;
         margin-left: .7rem;
+        border-radius: 4px;
 
         background-color: var(--accent);
         color: var(--white) !important;
@@ -311,6 +314,7 @@ nav{
 
 .btn{
     color: var(--darkText);
+    text-decoration: none;
     font-family: 'DM Sans', sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -326,8 +330,15 @@ nav{
     align-items: center;
     justify-content: center;
 
+    &:hover{
+        i{
+            transform: translateX(3px);
+            transition: .1s ease transform;
+        }
+    }
     i{
         font-size: 12px;
+        margin-top: 3px;
     }
 }
 
@@ -776,7 +787,7 @@ nav{
         
         .left{
            display: flex;
-           justify-content: flex-end;
+           justify-content: center;
            flex-direction: column;
 
            .section-header{
@@ -906,6 +917,7 @@ nav{
                     font-family: 'DM Sans', sans-serif;
                     color: var(--white);
                     border: var(--white) 2px solid;
+                    cursor: default;
                 }
                 .full-btn{
                     background-color: var(--white);
@@ -929,6 +941,7 @@ nav{
 
 #preguntas-frecuentes{
     margin-top: 8rem;
+    
 
     .container{
         max-width: 980px;
@@ -970,6 +983,7 @@ nav{
         font-size: 18px;
         font-weight: 600;
         margin-bottom: 30px;
+        user-select: none;
         
     }
 
@@ -1123,6 +1137,7 @@ footer{
         
     }
     
+    
 
     
     
@@ -1215,6 +1230,9 @@ footer{
             gap: 10px;
             cursor: pointer;
             
+            & a:hover{
+                color: var(--faq);
+            }
 
             a{
                 color: var(--lightText);

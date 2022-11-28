@@ -110,11 +110,12 @@ nav .nav-bar .burguer-menu {
   letter-spacing: 0.02px;
   color: var(--darkText);
   opacity: 90%;
-  padding: 0.3rem 0.6rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 50px;
+  transition: 0.2s ease background-color;
 }
 .nav-links a:hover {
   background-color: rgba(189, 189, 189, 0.144);
-  border-radius: 50px;
   opacity: 100%;
 }
 .nav-links .full-btn {
@@ -123,6 +124,7 @@ nav .nav-bar .burguer-menu {
   text-decoration: none;
   padding: 0.5rem 1.3rem;
   margin-left: 0.7rem;
+  border-radius: 4px;
   background-color: var(--accent);
   color: var(--white) !important;
 }
@@ -236,6 +238,7 @@ nav .nav-bar .burguer-menu {
 
 .btn {
   color: var(--darkText);
+  text-decoration: none;
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -248,8 +251,13 @@ nav .nav-bar .burguer-menu {
   align-items: center;
   justify-content: center;
 }
+.btn:hover i {
+  transform: translateX(3px);
+  transition: 0.1s ease transform;
+}
 .btn i {
   font-size: 12px;
+  margin-top: 3px;
 }
 
 .full-btn {
@@ -604,7 +612,7 @@ nav .nav-bar .burguer-menu {
 }
 #requisitos .container .left {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   flex-direction: column;
 }
 #requisitos .container .left .section-header {
@@ -709,6 +717,7 @@ nav .nav-bar .burguer-menu {
   font-family: "DM Sans", sans-serif;
   color: var(--white);
   border: var(--white) 2px solid;
+  cursor: default;
 }
 #afiliacion .container .content .afiliation-boxes .full-btn {
   background-color: var(--white);
@@ -759,6 +768,7 @@ nav .nav-bar .burguer-menu {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 30px;
+  user-select: none;
 }
 .faq-item a {
   text-decoration: underline;
@@ -925,6 +935,9 @@ footer .right .footer-social {
   display: flex;
   gap: 10px;
   cursor: pointer;
+}
+footer .right .footer-social a:hover {
+  color: var(--faq);
 }
 footer .right .footer-social a {
   color: var(--lightText);
