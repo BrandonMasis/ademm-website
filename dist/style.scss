@@ -87,7 +87,7 @@ nav{
     overflow: hidden;
 
     height: fit-content;
-    z-index: 5;
+    z-index: 10;
 
      
 
@@ -662,7 +662,7 @@ nav{
         i{
             position: relative;
             font-size: 20px;
-            z-index: 5;
+            z-index: 3;
             width: fit-content;
            background-color: white;
             color: var(--lightText);
