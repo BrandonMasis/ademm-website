@@ -26,9 +26,20 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
     crossorigin="anonymous" referrerpolicy="no-referrer">
+
+
+  <link rel="apple-touch-icon" sizes="180x180"
+    href="/dist/assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32"
+    href="/dist/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16"
+    href="/dist/assets/favicon-16x16.png">
+  <link rel="manifest" href="/dist/assets/site.webmanifest">
 </head>
 
 <body class="preload">
+
+
   <!-- NAVIGATION -->
   <nav id="nav">
     <div class="nav-bar">
@@ -46,7 +57,7 @@
         <!-- visible on fixed -->
         <!-- <li><a href="#inicio">Inicio</a></li> -->
         <li><a href="#beneficios">Beneficios</a></li>
-        <li><a href="#aval-internacional">Academias
+        <li><a href="#buscar-afiliados">Academias
             afiliadas</a></li>
         <li><a href="#preguntas-frecuentes">Preguntas
             frecuentes</a></li>
@@ -54,7 +65,7 @@
         </li>
 
         <li>
-          <a id="nav-contact" class="full-btn"
+          <a id="nav-contact" class="full-btn btn"
             href="#afiliacion">Contacto</a>
         </li>
       </ul>
@@ -62,22 +73,26 @@
   </nav>
 
   <!-- HERO -->
-  <section id="inicio">
+  <section id="hero">
     <div class="container">
       <div class="left">
         <h1 class="hero-heading">
           Respaldo para academias y salones de
           <span>belleza</span>
         </h1>
-        <p class="p18">
-          ADEMM es una asociacion que avala que academias y
+        <p class="small-text">
+          ADEMM es una asociacion que avala que academias
+          y
           salones de belleza
           ofrecen servicios profesionales y provee
           beneficios para sus socios.
         </p>
         <div class="hero-btns">
-          <div class="full-btn btn">Afiliate</div>
-          <div class="hollow-btn btn">Academias respaldadas
+          <div class="full-btn btn">Afiliate <i
+              class="fa-solid fa-chevron-right"></i></div>
+          <div class="btn">Academias
+            respaldadas<i
+              class="fa-solid fa-chevron-right"></i>
           </div>
         </div>
         <div class="hero-stats">
@@ -92,241 +107,362 @@
         </div>
       </div>
       <div class="right">
-        <img src="./images/heroimg.webp"
+        <img src="./images/hero.webp"
           alt="Fotografia de una mujer sonriendo">
       </div>
 
-      <div class="mobile-stats">
-        <div class="mobile-stat">
-          <div class="stat-icon"><i
-              class="fa-solid fa-users"></i></div>
-          <div class="stat-text">
-            <h3>Presencia en +10 paises</h3>
-          </div>
-        </div>
-        <div class="mobile-stat">
-          <div class="stat-icon"><i
-              class="fa-solid fa-briefcase"></i></div>
-          <div class="stat-text">
-            <h3>Presencia en +10 paises</h3>
-          </div>
-        </div>
-        <div class="mobile-stat">
-          <div class="stat-icon"><i
-              class="fa-solid fa-handshake-angle"></i></div>
-          <div class="stat-text">
-            <h3>Presencia en +10 paises</h3>
-          </div>
-        </div>
-
-      </div>
     </div>
+
   </section>
   <!-- <div id="scrolltest2"></div> centered scroll -->
+  <div class="cta-stats">
+    <div class="container">
+
+
+      <div class="cta-stat">
+        <div class="stat-text">
+
+          <i class="fa-solid fa-users"></i>
+          <h3>Presencia en +10 paises</h3>
+
+        </div>
+        <div class="stat-info">
+          <p>Lorem ipsum dolor sit amet consectetur
+            adipisicing elit.</p>
+        </div>
+      </div>
+      <div class="cta-stat">
+        <div class="stat-text">
+
+          <i class="fa-solid fa-briefcase"></i>
+          <h3>Beneficios exclusivos</h3>
+
+        </div>
+        <div class="stat-info">
+          <p>Lorem ipsum dolor sit amet consectetur
+            adipisicing elit.</p>
+        </div>
+      </div>
+      <div class="cta-stat">
+        <div class="stat-text">
+
+          <i class="fa-solid fa-handshake-angle"></i>
+          <h3>Ayuda para tal cosa</h3>
+
+        </div>
+        <div class="stat-info">
+          <p>Lorem ipsum dolor sit amet consectetur
+            adipisicing elit.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
   <section id="beneficios">
-    <div class="container" id="scrolltest">
-      <div class="tagline">Beneficios</div>
-      <div class="benefits">
-        <div class="benefit-card" id="student-benefits">
-          <div class="dark-fade">
-            <div>
-              <h2>Estudiantes</h2>
-              <p>
-                ADEMM es una asociacion que avala que
-                academias y salones de
-                belleza ofrecen servicios profesionales y
-                provee beneficios
-                para sus socios.
-              </p>
-            </div>
-            <div>
-              <div class="card-item">
-                <i class="fa-solid fa-medal"></i>
-                <h3>Titulos certificados</h3>
-              </div>
-              <div class="line"></div>
-              <div class="card-item">
-                <i class="fa-solid fa-medal"></i>
-                <h3>Titulos certificados</h3>
-              </div>
-              <div class="line"></div>
-              <div class="card-item">
-                <i class="fa-solid fa-medal"></i>
-                <h3>Titulos certificados</h3>
-              </div>
-            </div>
+    <div class="container">
+      <h2 class="section-header">Descubre los beneficios
+        para:
+      </h2>
+      <div class="benefits-tab">
+        <div class="benefit-option actual-tab"
+          data-option="academy-benefits"><i
+            class="fa-solid fa-medal"></i>
+          <h3>Academias avaladas</h3>
+        </div>
+        <div class="benefit-option"
+          data-option="student-benefits"><i
+            class="fa-solid fa-graduation-cap"></i>
+          <h3>Estudiantes de academias avaladas</h3>
+        </div>
+        <div class="benefit-option"
+          data-option="salon-benefits"><i
+            class="fa-solid fa-scissors"></i>
+          <h3>Salas de belleza, salones, esteticas</h3>
+        </div>
+      </div>
+      <div class="benefits-display">
+        <div class="row">
+
+          <img src="./images/academy-benefits.webp" alt="">
+
+          <div class="benefits">
+            <ul>
+              <li><span class="benefit-check"><i
+                    class="fa-solid fa-check"></i></span>Respaldo
+                de las certificaciones (talleres,seminarios
+                y cursos) con sello de calidad ademm,
+                presencial y en linea</li>
+              <li>
+                <span class="benefit-check"><i
+                    class="fa-solid fa-check"></i></span>
+                Cartas de certificacion academica para
+                instituciones publicas o privadas
+              </li>
+              <li>
+                <span class="benefit-check"><i
+                    class="fa-solid fa-check"></i></span>
+                Difusion de cursos y productos o servicios
+              </li>
+              <li>
+                <span class="benefit-check"><i
+                    class="fa-solid fa-check"></i></span>
+                Carnet y certificado con codigo de
+                verificacion
+              </li>
+              <li><span class="benefit-check"><i
+                    class="fa-solid fa-check"></i></span>Verificacion
+                de estudios a nivel internacional (exclusivo
+                para socios)</li>
+            </ul>
           </div>
         </div>
-        <div class="benefit-card" id="stablish-benefits">
-          <div class="dark-fade">
-            <h2>Establece tu negocio</h2>
+        <div class="row">
+          <div class="benefits">
+            <ul>
+
+              <li>
+                <span class="benefit-check"><i
+                    class="fa-solid fa-check"></i></span>
+                Capacitaciones gratuitas (exclusivas para
+                socios)
+              </li>
+              <li>
+                <span class="benefit-check"><i
+                    class="fa-solid fa-check"></i></span>
+                Consultorias y asesoramiento
+              </li>
+              <li>
+                <span class="benefit-check"><i
+                    class="fa-solid fa-check"></i></span>
+                Bolsa de empleo
+              </li>
+
+              <li>
+                <span class="benefit-check"><i
+                    class="fa-solid fa-check"></i></span>
+                Descuento en maestrias internacionales y
+                curso de formadores en belleza, para
+                planeamiento y evaluacion
+              </li>
+
+            </ul>
           </div>
-        </div>
-        <div class="benefit-card" id="improve-benefits">
-          <div class="dark-fade">
-            <h2>Mejora tu negocio</h2>
-          </div>
+          <img src="./images/academy-benefits2.webp" alt="">
         </div>
       </div>
     </div>
   </section>
 
-  <section id="aval-internacional">
+  <section id="buscar-afiliados">
     <div class="container">
-      <div class="left">
-        <img src="./images/aval-internacional.webp"
-          alt="Fotografia de banderas del mundo">
+      <img class="ivy" src="./images/ivy.webp" alt="">
+      <div>
+        <div class="section-header">Quieres saber si tu
+          academia esta afiliada?</div>
+        <p class="small-text">Puedes realizar una busqueda,
+          escribiendo el nombre del director o directora de
+          la
+          academia</p>
       </div>
-      <div class="right">
-        <div class="content">
-          <div class="tagline">Aval internacional</div>
-          <h2 class="section-header">
-            Socios a nivel nacional e internacional
-          </h2>
-          <p class="p18">
-            Nuestro aval te sirve principalmente en estos
-            paises, ejemplo 1,
-            ejemplo 2, ejemplo 3 y ejemplo 4.
-          </p>
-          <div class="full-btn btn">
-            Ver academias afiliadas
+      <div>
+        <div class="search-member">
+          <div class="search-icon">
+
             <i class="fa-solid fa-magnifying-glass"></i>
           </div>
+          <input type="text" name=""
+            id="search-members-input" placeholder="Ejemplo">
+          <div class="total-members">
+            <h2>0</h2>
+          </div>
         </div>
-        <div class="lines">
-          <div></div>
-          <div></div>
-          <div></div>
+        <div class="search-member-results">
         </div>
       </div>
+      <img class="ivy2" src="./images/ivy.webp" alt="">
     </div>
+  </section>
+  <section id="requisitos">
+    <div class="container">
+      <div class="left">
+        <div class="section-header">Que requisitos necesitas
+          para afiliarte?</div>
+        <div class="requirements">
+          <div class="point-line"></div>
+          <ul>
+            <li class="small-text">Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit. Donec et
+              tellus ut leo fermentum iaculis at quis leo.
+              Interdum et.</li>
+            <li class="small-text">Lorem ipsum dolor sit
+              amet, consectetur</li>
+            <li class="small-text">Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit. Donec et
+              tellus ut leo fermentum iaculis at quis leo.
+              Interdum et.</li>
+            <li class="small-text">Lorem ipsum dolor sit
+              amet, consectetur adipiscing</li>
+
+
+          </ul>
+        </div>
+      </div>
+      <img src="./images/requirements.webp" alt="">
+    </div>
+  </section>
+  <section id="afiliacion">
+
+    <div class="container">
+      <img class="ivy" src="./images/ivy.webp" alt="">
+      <div class="content">
+        <div class="section-header">No te pierdas de los
+          beneficios !</div>
+        <p class="small-text">Lleva tu academia un paso mas
+          alla y disfruta de los beneficios de ser un socio
+          ademm.</p>
+        <div class="afiliation-boxes">
+          <div class="btn price">
+            ₡150 000 / Anualmente
+          </div>
+          <div class="btn full-btn">Contactanos por Whatsapp
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
+      </div>
+      <img class="ivy2" src="./images/ivy.webp" alt="">
+    </div>
+
   </section>
 
   <section id="preguntas-frecuentes">
     <div class="container">
-      <div class="tagline">Preguntas frecuentes</div>
+
       <div class="faq">
+        <h2 class="section-header">Preguntas frecuentes
+        </h2>
         <div class="faq-item">
           <div>
-            <h3>Como afiliarse?</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Cras
-              nunc lectus, posuere in dolor vitae, semper
-              aliquet tortor.
-              Proin vitae
-            </p>
+            <h3>Que requisitos necesito para afiliarme?</h3>
+            <div class="faq-answer-wrapper">
+              <p class="faq-answer">
+                Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Cras
+                nunc lectus, posuere in dolor vitae, semper
+                ali.
+                Proin vitae feugiat tellus. Puedes
+                <span> <a
+                    href="/dist/index.html#contact">contactarnos</a></span>
+
+                para consectetur adipiscing
+              </p>
+            </div>
           </div>
           <div class="show-answer">
-            <h4>+</h4>
-          </div>
-        </div>
-        <div class="faq-item">
-          <div>
-            <h3>Como afiliarse?</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Cras
-              nunc lectus, posuere in dolor vitae, semper
-              aliquet tortor.
-              Proin vitae contactarnos
-            </p>
-          </div>
-          <div class="show-answer">
-            <h4>+</h4>
+            <i
+              class="fa-sharp fa-solid fa-chevron-down"></i>
           </div>
         </div>
         <div class="faq-item">
           <div>
-            <h3>Como afiliarse?</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Cras
-              nunc lectus, posuere in dolor vitae, semper
-              aliquet tortor.
-              Proin vitae contactarnos
-            </p>
+            <h3>Cada cuanto renuevo la membresia?</h3>
+            <div class="faq-answer-wrapper">
+              <p class="faq-answer">
+                Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Cras Lorem, ipsum.
+                nunc lectus, posuere in dolor vitae, semper
+                aliquet tortor.
+                Proin vitae feugiat tellus. Puedes
+                <span> <a
+                    href="/dist/index.html#contact">contactarnos</a></span>
+
+                para consectetur adipiscing
+              </p>
+            </div>
           </div>
           <div class="show-answer">
-            <h4>+</h4>
+            <i
+              class="fa-sharp fa-solid fa-chevron-down"></i>
           </div>
         </div>
         <div class="faq-item">
           <div>
-            <h3>Como afiliarse?</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Cras
-              nunc lectus, posuere in dolor vitae, semper
-              aliquet tortor.
-              Proin vitae contactarnos
-            </p>
+            <h3>El aval es internacional?</h3>
+            <div class="faq-answer-wrapper">
+              <p class="faq-answer">
+                Lorem ipsum dolor sit amet, consectetur
+
+                nunc lectus, posuere in dolor vitae, semper
+                aliquet tortor.
+                Proin vitae feugiat tellus. Puedes
+                Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Itaque illo amet placeat.
+                Quidem fugiat consectetur maxime velit rem,
+                pariatur, exercitationem natus amet hic cum,
+                expedita doloribus ex magnam! Iusto sint
+                autem similique saepe ducimus consequatur
+                laborum voluptatum tenetur repellat natus.
+
+                para consectetur adipiscing
+              </p>
+            </div>
           </div>
           <div class="show-answer">
-            <h4>+</h4>
+            <i
+              class="fa-sharp fa-solid fa-chevron-down"></i>
           </div>
         </div>
-        <div class="faq-item open">
+        <div class="faq-item">
           <div>
-            <h3>Como afiliarse?</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Cras
-              nunc lectus, posuere in dolor vitae, semper
-              aliquet tortor.
-              Proin vitae feugiat tellus. Puedes
-              <a
-                href="/dist/index.html#contact">contactarnos</a>
-              para
-              consectetur adipiscing
-            </p>
+            <h3>Como certifico mis cursos?</h3>
+            <div class="faq-answer-wrapper">
+              <p class="faq-answer">
+                Lorem ipsum dolor sit amet, consectetu
+                para consectetur adipiscing Lorem, ipsum
+                dolor.
+              </p>
+            </div>
           </div>
-          <div class="show-answer close">
-            <h4>+</h4>
+          <div class="show-answer">
+            <i
+              class="fa-sharp fa-solid fa-chevron-down"></i>
           </div>
         </div>
+        <div class="faq-item">
+          <div>
+            <h3>Como verifico si una academia esta avalada
+              por ADEMM?</h3>
+            <div class="faq-answer-wrapper">
+              <p class="faq-answer">
+                Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Cras
+                nunc lectus, posuere in dolor vitae, semper
+                aliquet tortor.
+                Proin vitae feugiat tellus. Puedes
+                <span> <a
+                    href="/dist/index.html#contact">contactarnos</a></span>
+
+                para consectetur adipiscing
+              </p>
+            </div>
+          </div>
+          <div class="show-answer">
+            <i
+              class="fa-sharp fa-solid fa-chevron-down"></i>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <section id="afiliacion">
-    <div class="container">
-      <div class="left">
-        <img
-          src="./images/christina-wocintechchat-com-swi1DGRCshQ-unsplash.webp"
-          alt="Fotografia de dos mujeres con traje, en un ambiente profesional">
-      </div>
-      <div class="right">
-        <div class="content">
-          <div class="tagline">Afiliación</div>
-          <h2 class="section-header">No te pierdas de los
-            beneficios!</h2>
-          <p class="p18">
-            Lleva tu academia un paso mas alla, disfruta de
-            los beneficios de
-            ser un socio ademm.
-          </p>
-          <div class="full-btn btn">
-            Contactanos por Whatsapp<i
-              class="fa-brands fa-whatsapp"></i>
-          </div>
-        </div>
-        <div class="lines">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <section id="sobre-nosotros">
     <div class="container">
       <div class="left">
-        <div class="tagline">Sobre nosotros</div>
+
         <div>
           <h2 class="section-header">Nuestra mision</h2>
-          <p class="p18">
+          <p class="small-text">
             Vestibulum eu quam nec neque pellentesque
             efficitur id eget nisl,
             proin porta est convallis lacus blandit pretium
@@ -351,6 +487,7 @@
       </div>
     </div>
   </section>
+
   <footer>
     <div class="container">
       <div class="content">
@@ -367,10 +504,10 @@
         <div class="center">
           <h2 class="footer-header">Links</h2>
           <ul class="footer-text">
-            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#hero">Inicio</a></li>
             <li><a href="#beneficios">Beneficios</a></li>
-            <li><a href="#aval-internacional">Aval
-                internacional</a></li>
+            <li><a href="#buscar-afiliados">Buscar academias
+                afiliadas</a></li>
             <li><a href="#preguntas-frecuentes">Preguntas
                 frecuentes</a></li>
             <li><a href="#sobre-nosotros">Sobre nosotros</a>
@@ -388,21 +525,21 @@
             <div class="footer-social">
               <a href="https://www.facebook.com/asoademm1/"
                 target="_blank">
-                link to facebook
+                link to Facebook
                 <i class="fa-brands fa-square-facebook"></i>
               </a>
               <a href="https://www.facebook.com/asoademm1/"
                 target="_blank">
-                link to Whatsap
+                link to Whatsapp
                 <i class="fa-brands fa-square-whatsapp"></i>
               </a>
             </div>
           </div>
         </div>
       </div>
-      <p class="footer-text copyright">Copyright © ADEMM
-        2022</p>
+
     </div>
+
   </footer>
 </body>
 
