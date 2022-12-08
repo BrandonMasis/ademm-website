@@ -148,7 +148,7 @@ benefitOption.forEach((option) => {
       case 'salon-benefits':
         benefitsDisplay.innerHTML = `<div class="row">
 
-          <img src="./images/salon-benefits.webp" alt="">
+          <img src="./images/salon-benefits1.webp" alt="">
 
           <div class="benefits">
             <ul>
@@ -175,6 +175,15 @@ benefitOption.forEach((option) => {
                 Capacitaciones gratuitas (exclusivas para
                 socios)
               </li>
+              
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          
+
+          <div class="benefits">
+          <ul>
               <li>
                 <span class="benefit-check"><i
                     class="fa-solid fa-check"></i></span>
@@ -192,8 +201,10 @@ benefitOption.forEach((option) => {
                 curso de formadores en belleza, para
                 planeamiento y evaluacion
               </li>
+              
             </ul>
           </div>
+          <img src="./images/salon-benefits2.webp" alt="">
         </div>`;
         break;
     }
