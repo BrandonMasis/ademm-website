@@ -75,6 +75,53 @@ nav {
   overflow: hidden;
   height: fit-content;
   z-index: 10;
+  /* ANIMATION */
+}
+nav .menu-btn {
+  position: relative;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+nav .menu-btn__burger {
+  width: 35px;
+  height: 5px;
+  background: var(--darkText);
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  transition: all 0.5s ease-in-out;
+}
+nav .menu-btn__burger::before,
+nav .menu-btn__burger::after {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 5px;
+  background: var(--darkText);
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  transition: all 0.5s ease-in-out;
+}
+nav .menu-btn__burger::before {
+  transform: translateY(-12px);
+}
+nav .menu-btn__burger::after {
+  transform: translateY(12px);
+}
+nav .menu-btn.open .menu-btn__burger {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+nav .menu-btn.open .menu-btn__burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+nav .menu-btn.open .menu-btn__burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
 }
 nav .nav-bar {
   width: 100%;
@@ -210,6 +257,15 @@ nav .nav-bar .logo img {
   width: 32rem;
   padding-bottom: 2rem;
   justify-content: flex-start !important;
+}
+#hero .container .left .hero-heading {
+  width: 100%;
+  max-width: 32rem;
+  min-width: 28rem;
+}
+#hero .container .left .small-text {
+  width: 100%;
+  max-width: 30rem;
 }
 #hero .container .right {
   display: flex;
@@ -477,6 +533,7 @@ nav .nav-bar .logo img {
 #buscar-afiliados .container {
   max-width: 100%;
   display: grid;
+  margin: 0;
   grid-template-columns: 1fr 46rem 1fr;
   grid-template-rows: 15rem auto;
   justify-content: center;
@@ -516,8 +573,10 @@ nav .nav-bar .logo img {
   grid-row: 1/2;
 }
 #buscar-afiliados .container > div:nth-child(3) {
+  width: 100%;
   padding-top: 2rem;
   align-self: start;
+  justify-self: center;
   grid-column: -3/-2;
   grid-row: -2/-1;
 }
@@ -639,11 +698,10 @@ nav .nav-bar .logo img {
   margin-top: 8rem;
 }
 #requisitos .container {
-  max-width: 1110px;
+  max-width: 1080px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
 }
 #requisitos .container .left {
   display: flex;
@@ -654,10 +712,8 @@ nav .nav-bar .logo img {
   width: 30rem;
 }
 #requisitos .container .left .requirements {
-  margin-top: 3rem;
-  display: flex;
-  height: auto;
-  align-items: center;
+  margin-top: 2rem;
+  padding-left: 0.5rem;
 }
 #requisitos .container .left .requirements li {
   display: flex;
@@ -677,17 +733,11 @@ nav .nav-bar .logo img {
   border-radius: 50px;
   background-color: var(--lines);
 }
-#requisitos .container .left .point-line {
-  width: 3px;
-  background-color: var(--lines);
-  margin-bottom: 1rem;
-  height: 15.5rem;
-}
-#requisitos .container img {
-  width: 25vw;
-  max-width: 25rem;
-  min-width: 25rem;
-  height: auto;
+#requisitos .container .right {
+  background-image: url(./images/requirements.webp);
+  width: 20rem;
+  height: 25rem;
+  background-size: cover;
 }
 
 #afiliacion {
@@ -712,6 +762,7 @@ nav .nav-bar .logo img {
   grid-column: 1/2;
   height: 50rem;
   opacity: 55%;
+  left: 40px;
   position: relative;
   top: -60px;
   -webkit-user-drag: none;
@@ -726,7 +777,7 @@ nav .nav-bar .logo img {
   position: relative;
   height: 50rem;
   top: -60px;
-  left: -30px;
+  left: -40px;
   justify-self: center;
   transform: rotateY(180deg) rotate(2deg);
 }
@@ -749,7 +800,7 @@ nav .nav-bar .logo img {
 }
 #afiliacion .container .content .small-text {
   font-size: 18px;
-  width: 35rem !important;
+  max-width: 35rem;
   text-align: center;
   width: 100%;
   color: var(--white);
@@ -852,13 +903,14 @@ nav .nav-bar .logo img {
 }
 #sobre-nosotros .container {
   justify-content: center;
-  gap: 5rem;
+  gap: 3rem;
   height: fit-content;
+  flex-wrap: wrap;
 }
 #sobre-nosotros .left {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
 }
 #sobre-nosotros .left h2 {
   margin-bottom: 1.5rem;
@@ -868,11 +920,13 @@ nav .nav-bar .logo img {
 }
 #sobre-nosotros .right {
   display: flex;
-}
-#sobre-nosotros .right img {
+  justify-content: center;
+  background-image: url(./images/about-us.webp);
   height: 27rem;
   border-radius: 0px 25px 0px 0px;
-  width: auto;
+  width: 25rem;
+  background-size: cover;
+  user-select: none;
 }
 
 .footer-header {
@@ -899,32 +953,27 @@ footer {
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 20rem;
   border-top: 1px rgba(85, 84, 84, 0.048) solid;
 }
 footer .container {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-footer .content {
   display: grid;
-  width: 100vw;
+  height: fit-content;
   max-width: 1080px;
   flex: 1;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1.5fr 1fr;
   justify-content: center;
   align-items: center;
 }
-footer .content > div {
+footer .container > div {
   display: flex;
   flex-direction: column;
   border-right: 1px solid var(--footer-lines);
-  height: 13rem;
-  justify-content: space-between;
+  height: 100%;
 }
 footer .left {
-  padding-right: 2rem;
+  padding-right: 1rem;
 }
 footer .left .hollow-btn {
   display: flex;
@@ -943,7 +992,7 @@ footer .left p {
   width: 15rem;
 }
 footer .center {
-  padding-left: 4rem;
+  padding-left: 2rem;
 }
 footer .center ul li {
   list-style: none;
@@ -957,7 +1006,7 @@ footer .center ul li a {
   color: var(--footer-text);
 }
 footer .right {
-  padding-left: 4rem;
+  padding-left: 2rem;
   border-right: none !important;
 }
 footer .right > div:nth-child(2) {
@@ -1025,6 +1074,9 @@ footer .right .footer-social a i {
   .sticky .nav-bar li:nth-child(1) {
     display: none;
   }
+  .section-header {
+    font-size: 28px;
+  }
   #hero {
     margin-bottom: 6rem;
     margin-top: 2vh;
@@ -1048,16 +1100,24 @@ footer .right .footer-social a i {
     flex-direction: row;
     justify-content: space-between !important;
   }
+  #hero .container .left .hero-heading {
+    width: 30rem !important;
+    min-width: 0 !important;
+  }
+  #hero .container .left .small-text {
+    width: 40rem !important;
+    max-width: auto !important;
+  }
   #hero .container .right {
     display: none;
   }
-  .hero-heading {
+  #hero .hero-heading {
     width: 32rem;
   }
-  .hero-stats {
+  #hero .hero-stats {
     display: none;
   }
-  .mobile-stats {
+  #hero .mobile-stats {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1065,27 +1125,180 @@ footer .right .footer-social a i {
     padding-left: 3rem;
     height: 12rem;
   }
-  .mobile-stats > .stat {
+  #hero .mobile-stats > .stat {
     width: 10rem;
     margin: 0;
   }
-  .mobile-stats > .stat:first-child {
+  #hero .mobile-stats > .stat:first-child {
     border-right: none;
   }
-  .hero-btns {
+  #hero .hero-btns {
     display: none;
     margin-bottom: 2.5rem;
   }
-  .mobile-btns {
+  #hero .mobile-btns {
     display: flex;
     width: 100%;
+    height: 4rem;
     gap: 1rem;
   }
-  .mobile-btns .btn {
+  #hero .mobile-btns .btn {
     width: 50%;
     border: 1px solid var(--darkText);
   }
-  .mobile-btns .full-btn {
+  #hero .mobile-btns .full-btn {
     border: 0px;
+  }
+  #sobre-nosotros {
+    padding-top: 0rem;
+  }
+  #sobre-nosotros .container {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 4rem;
+    margin: 0;
+  }
+  #sobre-nosotros .left {
+    display: flex;
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  #sobre-nosotros .left .small-text {
+    width: 100%;
+  }
+  #sobre-nosotros .right {
+    height: 18rem;
+    background-position: 0px -65vw;
+    border-radius: 0px;
+    width: 100%;
+  }
+  .ivy {
+    display: none;
+  }
+  .ivy2 {
+    display: none;
+  }
+  #buscar-afiliados .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+  #buscar-afiliados .container > div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+  }
+  #buscar-afiliados .container > div:nth-child(3) {
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 46rem;
+  }
+  #buscar-afiliados .container p {
+    max-width: 35rem;
+  }
+  #requisitos {
+    margin-top: 0;
+  }
+  #requisitos .container {
+    flex-direction: column-reverse;
+  }
+  #requisitos .container .right {
+    width: 100%;
+    background-size: cover;
+    background-position: 0px -30vw;
+    height: 15rem;
+    margin-bottom: 2rem;
+  }
+  #requisitos .container .left {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 2rem;
+  }
+  #requisitos .container .left .section-header {
+    width: 100%;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  #requisitos .container .left .small-text {
+    width: auto;
+  }
+  #afiliacion .container {
+    display: flex;
+    margin: 0 2rem;
+  }
+  #afiliacion .container .content .section-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: var(--white);
+  }
+  #afiliacion .container .content .small-text {
+    font-size: 18px;
+    text-align: center;
+    max-width: 30rem;
+    width: 100% !important;
+    color: var(--white);
+  }
+  #afiliacion .container .content .afiliation-boxes {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  #afiliacion .container .content .afiliation-boxes .price {
+    width: 100%;
+    height: 4rem;
+  }
+  #afiliacion .container .content .afiliation-boxes .full-btn {
+    width: 100%;
+    height: 4rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  #hero .container .left .hero-heading {
+    font-size: 38px;
+    line-height: 40px;
+    min-width: auto;
+    width: 28rem !important;
+  }
+  #hero .container .left .small-text {
+    max-width: 20rem;
+  }
+  .cta-stats {
+    display: none;
+  }
+  .nav-links {
+    display: none;
+  }
+  nav .menu-btn {
+    display: flex;
+  }
+  .nav-bar .logo img {
+    width: 5rem !important;
+    height: auto;
+    animation-name: navTransition;
+    animation-duration: 0.2s;
+  }
+  #beneficios {
+    display: none;
+  }
+  footer .container {
+    grid-template-columns: 1fr 1fr;
+  }
+  footer .center {
+    display: none !important;
+  }
+  footer .right {
+    padding-left: 3rem;
   }
 }/*# sourceMappingURL=style.css.map */
