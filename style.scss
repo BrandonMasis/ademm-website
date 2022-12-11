@@ -68,10 +68,7 @@
 body{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    overflow-x: hidden;
-    max-width: 100vw;
-   
+    align-items: center; 
 }
 
 body.preload *{
@@ -85,17 +82,9 @@ nav{
     justify-content: center;
     align-items: center;
     padding-top: 1rem;
-
-    
-    width: 100vw;
-    max-width: 100vw;
-    overflow: hidden;
-
-    height: fit-content;
+    width: 100%;
     z-index: 10;
 
-     
-    
     .menu-btn {
         position: relative;
         display: none;
@@ -114,9 +103,9 @@ nav{
         border-radius: 2px;
         box-shadow: 0 2px 5px rgba(255,101,47,.2);
         transition: all .5s ease-in-out;
-      }
-      .menu-btn__burger::before,
-      .menu-btn__burger::after {
+      
+      &::before,
+      &::after {
         content: '';
         position: absolute;
         width: 35px;
@@ -126,24 +115,27 @@ nav{
         box-shadow: 0 2px 5px rgba(255,101,47,.2);
         transition: all .5s ease-in-out;
       }
-      .menu-btn__burger::before {
+      &::before {
         transform: translateY(-12px);
       }
-      .menu-btn__burger::after {
+      &::after {
         transform: translateY(12px);
       }
+    }
       /* ANIMATION */
       .menu-btn.open .menu-btn__burger {
         transform: translateX(-50px);
         background: transparent;
         box-shadow: none;
-      }
-      .menu-btn.open .menu-btn__burger::before {
+
+      
+      &::before {
         transform: rotate(45deg) translate(35px, -35px);
       }
-      .menu-btn.open .menu-btn__burger::after {
+      &::after {
         transform: rotate(-45deg) translate(35px, 35px);
       }
+    }
 
     .nav-bar{
         width: 100%;
@@ -164,7 +156,6 @@ nav{
           
         }
 
-       
     }
 
 }
@@ -258,18 +249,12 @@ nav{
 
 
 
-
 .container{
     display: flex;
     flex: 1;
-    width: 100vw;
+    width: 100%;
     max-width: 1080px;
-
     margin: 0 2rem;
-   
-  
-    
-    
 }
 
 .section-header{
@@ -292,23 +277,17 @@ nav{
     margin-top: calc(8vh);
     display: flex;
     justify-content: center;
-    max-width: 100vw;
-
-
+    
     .container{ 
-        display: flex;
-        margin: 0rem 2rem;
-        
         justify-content: center;
         gap: 3rem;
 
-      
-        
         .hero-image{
             display: none;
             border-radius: 4px;
             overflow: hidden;
             width: 100%;
+
             img{
                 height: auto;
                 width: 100%;
@@ -316,6 +295,7 @@ nav{
         }
         
         .left{
+            flex-wrap: wrap;
             display: flex;
             flex-direction: column;
             width: 32rem;
@@ -327,7 +307,6 @@ nav{
                 width: 100%;
                 max-width: 32rem;
                 min-width: 28rem;
-
                 
             }
             
@@ -341,11 +320,7 @@ nav{
             display: flex;
             max-width: 22rem;
             height: 100%;
-            
-          
-            
-            
-            
+
             img{
                 
         
@@ -365,13 +340,9 @@ nav{
     font-family: 'DM Serif Text', serif;
     font-size: 40px;
     font-weight: normal;
-
     line-height: 3rem;
     margin-bottom: .8rem;
     color: var(--darkText);
-    
-  
-
 }
 
 
@@ -446,6 +417,7 @@ nav{
 .mobile-stats{
     display: none;
 }
+
 
 
 .stat{
@@ -529,7 +501,7 @@ nav{
 }
 
 #beneficios{
-
+   
     .container{
         max-width: 980px;
         min-height: 90vh;
@@ -662,18 +634,28 @@ nav{
     }
 }
 
+#mobile-benefits-li{
+    display: none;
+}
 
+#_beneficios{
+    display: none;
+   
+}
 
 
 #buscar-afiliados{
+    display: flex !important;
+    overflow: hidden;
     background-color: var(--dark-accent);
-    width: 100%;
+    width: 100% !important;
     display: flex;
     justify-content: center;
    
     margin-top: 4rem;
-   
     height: 39rem;
+
+    align-items: flex-start;
     
     & *::selection{
         background-color: var(--highlightOnRed);
@@ -692,7 +674,7 @@ nav{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        overflow: hidden;
+       
 
         .ivy{
             grid-column: 1/2;
@@ -885,7 +867,10 @@ nav{
 }
 
 #requisitos{
+    display: flex !important;
+    width: 100%;
     margin-top: 8rem;
+    justify-content: center;
     .container{
         max-width: 1080px;
         display: flex;
@@ -942,7 +927,7 @@ nav{
 }
 
 #afiliacion{
-    
+    display: flex !important;
     background-color: var(--dark-accent);
     width: 100%;
     display: flex;
@@ -1051,7 +1036,7 @@ nav{
 
 #preguntas-frecuentes{
     margin-top: 8rem;
-    
+    display: flex !important;
 
     .container{
         max-width: 980px;
@@ -1142,7 +1127,6 @@ nav{
 
 #sobre-nosotros{
     margin-top: 8rem;
-    
     background-color: var(--gray-bg);
     
     width: 100%;
@@ -1198,8 +1182,6 @@ nav{
     font-weight: 600;
     word-spacing: -2px;
     line-height: 40px;
-    
-
     margin-bottom: .5rem;
 }
 
@@ -1209,7 +1191,6 @@ nav{
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     line-height: 1.7rem;
-
     margin-bottom: 1rem;
   
 }
@@ -1568,6 +1549,7 @@ footer{
             margin: 0 2rem;
             justify-content: center;
             align-items: center;
+            overflow: hidden;
           
             & > div:nth-child(2){
                 display: flex;
@@ -1601,9 +1583,10 @@ footer{
         
     }
     #requisitos{
-        margin-top: 0;
-        .container{
+        margin: 0;
 
+        .container{
+            margin: 0;
             flex-direction: column-reverse;
 
             .right{
@@ -1629,10 +1612,12 @@ footer{
             }
         }
     }
+
     #afiliacion{
         .container{
             display: flex;
             margin:  0 2rem;
+            overflow: hidden;
 
             .content{
                 .section-header{
@@ -1673,6 +1658,19 @@ footer{
 
 //   Tablet
 @media only screen and (max-width: 800px) {
+    
+    .tagline{
+        display: flex;
+        font-family: 'Lato', sans-serif;
+        font-size: 16px;
+        color: var(--darkText);
+        border: 1px solid var(--darkText);
+        border-radius: 50px;
+        width: fit-content;
+        padding:  .2rem 2rem;
+        margin-bottom: 2rem;
+
+    }
     #hero{
         .container{
             .left{
@@ -1726,11 +1724,74 @@ footer{
     }
 
 
+    #buscar-afiliados{
+        margin-top: 0 !important;
+    }
 
     #beneficios{
         display: none;
     }
 
+    #mobile-benefits-li{
+        display: flex;
+    }
+    
+    #_beneficios{
+        display: flex;
+        width: 100%;
+
+        .container{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        ._benefits{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+
+            ._benefit-option{
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                align-items: flex-end;
+                padding-bottom: 1rem;
+                padding-left: 2rem;
+                padding-right: 2rem;
+                height: 8rem;
+
+                cursor: pointer;
+                background-size: cover;
+                
+                
+                h3{
+                    color: var(--white);
+                    font-family: 'DM Sans', sans-serif;
+                    font-size: 18px;
+                    font-weight: 600; 
+                }
+                i{
+                    color: var(--white);
+                }
+                
+                &:nth-child(1){
+                    background-image: url(./images/Untitled\ \(11\).png);
+                    border-bottom: 1px solid white;
+                }
+                &:nth-child(2){
+                    background-image: url(./images/Untitled\ \(12\).png);
+                    border-bottom: 1px solid white;
+                }
+                &:nth-child(3){
+                    background-image: url(./images/Untitled\ \(13\).png);
+                }
+            }
+        }
+       
+    }
     footer{
         .container{
             grid-template-columns: 1fr 1fr;
