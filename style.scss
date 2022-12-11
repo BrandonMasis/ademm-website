@@ -369,6 +369,11 @@ nav{
     display: none;
 }
 
+.stat-line{
+    display: none;
+
+}
+
 
 .btn{
     color: var(--darkText);
@@ -427,7 +432,7 @@ nav{
     width: 10rem;
     border-right: 1px solid var(--lines);
 
-    &:nth-child(2){
+    &:nth-child(3){
     border-right: none;
     margin-left: 1.5rem;
     }
@@ -844,7 +849,6 @@ nav{
     
     cursor: pointer;
     height: fit-content;
-    
 
     max-height: 15.5rem;
     overflow-y: scroll;
@@ -875,6 +879,7 @@ nav{
     width: 100%;
     margin-top: 8rem;
     justify-content: center;
+
     .container{
         max-width: 1080px;
         display: flex;
@@ -1429,6 +1434,7 @@ footer{
             
             .left{
                 width: 100%;
+                padding-bottom: 0rem;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between !important;
@@ -1476,7 +1482,7 @@ footer{
                 width: 10rem; 
                 margin: 0;
             }
-            &>.stat:first-child{
+            &>.stat{
                
                border-right: none;
             }
@@ -1885,3 +1891,137 @@ footer{
     
  
   }
+
+
+@media only screen and (max-width:725px){
+    #hero{
+        .container{
+            .left{
+                display: flex;
+                justify-content: center !important;
+                align-items: center;
+
+                .mobile-left{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+              
+            .hero-heading{
+                text-align: center;
+                width: 100% !important;
+            }
+
+            .small-text{
+                text-align: center;
+                max-width: 35rem;
+                width: 100% !important;
+            }
+
+            .hero-stats{
+                display: flex;
+                height: 6rem;
+                width: 100%;
+                justify-content: space-around;
+                align-items: center;
+            }
+           }
+        }
+        .hero-stats{
+            display: flex ;
+        }
+        
+        .mobile-stats{
+            display: none ;
+        }
+    
+        .mobile-btns{
+            display: none ;
+
+        }
+    
+        .hero-btns{
+            display: flex ;
+           
+                
+                width: 100%;
+                height: fit-content;
+                gap: .5rem;
+                flex-direction: column;
+    
+                .btn{
+                    width: 100%;
+                    height: 3.5rem;
+                    border: 1px solid var(--darkText);
+                    i{
+                        display: none;
+                    }
+                }
+        
+                .full-btn{
+                    border: 0px;
+                }
+
+
+                
+            
+        }
+
+            .stat{
+                border-right: none;
+            }
+
+          
+            .stat-line{
+                display: flex;
+                width: 0px;
+                border-right: 1px solid var(--lines);
+                height: 100%;
+            }
+        
+    }
+
+    footer{
+        height: fit-content;
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            
+            & > div{
+                display: flex;
+                flex-direction: column;
+                border-right: 0;
+                width: 100%;
+            
+            }
+
+        }
+        .left{
+            padding-top: 1.5rem;
+
+            p{
+                width: 100%;
+            }
+        }
+
+       
+        .right{
+            
+            padding-top: 1rem;
+            border-top: 1px solid var(--footer-lines);
+            padding-left: 1rem;
+            margin-top: 1rem;
+            padding-bottom: 1rem;
+
+            & > div:nth-child(2){
+                
+                display: flex;
+                flex-direction: row;
+            }
+        }
+    }
+    
+}
