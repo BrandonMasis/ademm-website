@@ -1348,6 +1348,7 @@ footer .right .footer-social a i {
     width: 100%;
   }
   #_beneficios ._benefits ._benefit-option {
+    height: 140px;
     overflow: hidden;
     transition: 0.15s ease height;
   }
@@ -1358,7 +1359,7 @@ footer .right .footer-social a i {
     padding-bottom: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
-    height: 150px;
+    height: 140px;
     cursor: pointer;
     background-size: cover;
   }

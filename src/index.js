@@ -245,7 +245,7 @@ _benefitOptions.forEach((option) => {
       option.setAttribute('style', `height:${bodyOffsetHeight + 140}px`);
       chevron.style.transform = 'rotate(180deg)';
     } else {
-      option.setAttribute('style', `height:${140}px`);
+      option.setAttribute('style', `height: 140px`);
       chevron.style.transform = 'rotate(0deg)';
     }
   });
