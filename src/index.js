@@ -28,6 +28,138 @@ const memberList = [
   'Carlos chacon',
 ];
 
+// benefits
+const academyBenefitsList1 = `
+<li><span class="benefit-check"><i
+      class="fa-solid fa-check"></i></span>Respaldo
+  de las certificaciones (talleres,seminarios
+  y cursos) con sello de calidad ademm,
+  presencial y en linea</li>
+<li>
+  <span class="benefit-check"><i
+      class="fa-solid fa-check"></i></span>
+  Cartas de certificacion academica para
+  instituciones publicas o privadas
+</li>
+<li>
+  <span class="benefit-check"><i
+      class="fa-solid fa-check"></i></span>
+  Difusion de cursos y productos o servicios
+</li>
+<li>
+  <span class="benefit-check"><i
+      class="fa-solid fa-check"></i></span>
+  Carnet y certificado con codigo de
+  verificacion
+</li>
+<li><span class="benefit-check"><i
+      class="fa-solid fa-check"></i></span>Verificacion
+  de estudios a nivel internacional (exclusivo
+  para socios)</li>
+`;
+
+const academyBenefitsList2 = ` 
+
+<li>
+  <span class="benefit-check"><i
+      class="fa-solid fa-check"></i></span>
+  Capacitaciones gratuitas (exclusivas para
+  socios)
+</li>
+<li>
+  <span class="benefit-check"><i
+      class="fa-solid fa-check"></i></span>
+  Consultorias y asesoramiento
+</li>
+<li>
+  <span class="benefit-check"><i
+      class="fa-solid fa-check"></i></span>
+  Bolsa de empleo
+</li>
+
+<li>
+  <span class="benefit-check"><i
+      class="fa-solid fa-check"></i></span>
+  Descuento en maestrias internacionales y
+  curso de formadores en belleza, para
+  planeamiento y evaluacion
+</li>
+
+`;
+
+const studentBenefitsList1 = `
+<li><span class="benefit-check"><i
+      class="fa-solid fa-check"></i></span>Carta
+  de idoneidad gratuita, al graduarte
+  en una academia avalada</li>
+<li>
+  <span class="benefit-check"><i
+      class="fa-solid fa-check"></i></span>
+  Precio preferencial en casas comerciales
+</li>
+<li>
+  <span class="benefit-check"><i
+      class="fa-solid fa-check"></i></span>
+  Plataforma de consultas
+</li>
+<li>
+  <span class="benefit-check"><i
+      class="fa-solid fa-check"></i></span>
+  Carta de idoneidad gratuita para tramite de
+  patente para apertura del salon de belleza
+  (segun lo dicta la reforma del reglamento N°
+  42942-S, del decreto ejecutivo 18329.)
+</li>
+`;
+
+const salonBenefitsList1 = ` 
+<li><span class="benefit-check"><i
+      class="fa-solid fa-check"></i></span>Carta
+  de idoneidad gratuita para tramite de
+  patente para apertura del salon de belleza
+  (segun lo dicta la reforma del reglamento N°
+  42942-S, del decreto ejecutivo 18329.)</li>
+<li>
+  <span class="benefit-check"><i
+      class="fa-solid fa-check"></i></span>
+  Carnet y certificado con codigo de
+  verificacion
+</li>
+<li>
+  <span class="benefit-check"><i
+      class="fa-solid fa-check"></i></span>
+  Carta para salas comerciales
+</li>
+<li>
+  <span class="benefit-check"><i
+      class="fa-solid fa-check"></i></span>
+  Capacitaciones gratuitas (exclusivas para
+  socios)
+</li>
+
+`;
+
+const salonBenefitsList2 = `
+<li>
+  <span class="benefit-check"><i
+      class="fa-solid fa-check"></i></span>
+  Consultorias y asesoramiento
+</li>
+<li>
+  <span class="benefit-check"><i
+      class="fa-solid fa-check"></i></span>
+  Bolsa de empleo
+</li>
+<li>
+  <span class="benefit-check"><i
+      class="fa-solid fa-check"></i></span>
+  Descuento en maestrias internacionales y
+  curso de formadores en belleza, para
+  planeamiento y evaluacion
+</li>
+
+`;
+
 window.addEventListener('scroll', () => {
   heroContainer.classList.toggle('afterSticky', window.scrollY > 0);
   nav.classList.toggle('sticky', window.scrollY > 0);
@@ -47,66 +179,16 @@ benefitOption.forEach((option) => {
         <img src="./images/academy-benefits.webp" alt="">
 
         <div class="benefits">
-          <ul>
-            <li><span class="benefit-check"><i
-                  class="fa-solid fa-check"></i></span>Respaldo
-              de las certificaciones (talleres,seminarios
-              y cursos) con sello de calidad ademm,
-              presencial y en linea</li>
-            <li>
-              <span class="benefit-check"><i
-                  class="fa-solid fa-check"></i></span>
-              Cartas de certificacion academica para
-              instituciones publicas o privadas
-            </li>
-            <li>
-              <span class="benefit-check"><i
-                  class="fa-solid fa-check"></i></span>
-              Difusion de cursos y productos o servicios
-            </li>
-            <li>
-              <span class="benefit-check"><i
-                  class="fa-solid fa-check"></i></span>
-              Carnet y certificado con codigo de
-              verificacion
-            </li>
-            <li><span class="benefit-check"><i
-                  class="fa-solid fa-check"></i></span>Verificacion
-              de estudios a nivel internacional (exclusivo
-              para socios)</li>
-          </ul>
+        <ul>
+        ${academyBenefitsList1}
+        </ul>
         </div>
       </div>
       <div class="row">
         <div class="benefits">
-          <ul>
-
-            <li>
-              <span class="benefit-check"><i
-                  class="fa-solid fa-check"></i></span>
-              Capacitaciones gratuitas (exclusivas para
-              socios)
-            </li>
-            <li>
-              <span class="benefit-check"><i
-                  class="fa-solid fa-check"></i></span>
-              Consultorias y asesoramiento
-            </li>
-            <li>
-              <span class="benefit-check"><i
-                  class="fa-solid fa-check"></i></span>
-              Bolsa de empleo
-            </li>
-           
-            <li>
-              <span class="benefit-check"><i
-                  class="fa-solid fa-check"></i></span>
-              Descuento en maestrias internacionales y
-              curso de formadores en belleza, para
-              planeamiento y evaluacion
-            </li>
-
-          </ul>
+        <ul>
+        ${academyBenefitsList2}
+        </ul>
         </div>
         <img src="./images/academy-benefits2.webp" alt="">
       </div>`;
@@ -118,30 +200,9 @@ benefitOption.forEach((option) => {
         <img src="./images/student-benefits1.webp" alt="">
 
         <div class="benefits">
-          <ul>
-            <li><span class="benefit-check"><i
-                  class="fa-solid fa-check"></i></span>Carta
-              de idoneidad gratuita, al graduarte
-              en una academia avalada</li>
-            <li>
-              <span class="benefit-check"><i
-                  class="fa-solid fa-check"></i></span>
-              Precio preferencial en casas comerciales
-            </li>
-            <li>
-              <span class="benefit-check"><i
-                  class="fa-solid fa-check"></i></span>
-              Plataforma de consultas
-            </li>
-            <li>
-              <span class="benefit-check"><i
-                  class="fa-solid fa-check"></i></span>
-              Carta de idoneidad gratuita para tramite de
-              patente para apertura del salon de belleza
-              (segun lo dicta la reforma del reglamento N°
-              42942-S, del decreto ejecutivo 18329.)
-            </li>
-          </ul>
+        <ul>
+        ${studentBenefitsList1}
+        </ul>
         </div>
       </div>`;
         break;
@@ -151,32 +212,9 @@ benefitOption.forEach((option) => {
           <img src="./images/salon-benefits1.webp" alt="">
 
           <div class="benefits">
-            <ul>
-              <li><span class="benefit-check"><i
-                    class="fa-solid fa-check"></i></span>Carta
-                de idoneidad gratuita para tramite de
-                patente para apertura del salon de belleza
-                (segun lo dicta la reforma del reglamento N°
-                42942-S, del decreto ejecutivo 18329.)</li>
-              <li>
-                <span class="benefit-check"><i
-                    class="fa-solid fa-check"></i></span>
-                Carnet y certificado con codigo de
-                verificacion
-              </li>
-              <li>
-                <span class="benefit-check"><i
-                    class="fa-solid fa-check"></i></span>
-                Carta para salas comerciales
-              </li>
-              <li>
-                <span class="benefit-check"><i
-                    class="fa-solid fa-check"></i></span>
-                Capacitaciones gratuitas (exclusivas para
-                socios)
-              </li>
-              
-            </ul>
+          <ul>
+          ${salonBenefitsList1}
+          </ul>
           </div>
         </div>
         <div class="row">
@@ -184,25 +222,8 @@ benefitOption.forEach((option) => {
 
           <div class="benefits">
           <ul>
-              <li>
-                <span class="benefit-check"><i
-                    class="fa-solid fa-check"></i></span>
-                Consultorias y asesoramiento
-              </li>
-              <li>
-                <span class="benefit-check"><i
-                    class="fa-solid fa-check"></i></span>
-                Bolsa de empleo
-              </li>
-              <li>
-                <span class="benefit-check"><i
-                    class="fa-solid fa-check"></i></span>
-                Descuento en maestrias internacionales y
-                curso de formadores en belleza, para
-                planeamiento y evaluacion
-              </li>
-              
-            </ul>
+          ${salonBenefitsList2}
+          </ul>
           </div>
           <img src="./images/salon-benefits2.webp" alt="">
         </div>`;
@@ -210,6 +231,27 @@ benefitOption.forEach((option) => {
     }
   });
 });
+
+// mobile benefits
+
+const _benefitOptions = document.querySelectorAll(`._benefit-option`);
+_benefitOptions.forEach((option) => {
+  option.addEventListener('click', () => {
+    let bodyOffsetHeight =
+      option.querySelector('.option-benefits').offsetHeight;
+    let chevron = option.querySelector(`i`);
+
+    if (option.offsetHeight == 140) {
+      option.setAttribute('style', `height:${bodyOffsetHeight + 140}px`);
+      chevron.style.transform = 'rotate(180deg)';
+    } else {
+      option.setAttribute('style', `height:${140}px`);
+      chevron.style.transform = 'rotate(0deg)';
+    }
+  });
+});
+
+//Search member
 
 searchMemberInput.addEventListener('input', () => {
   const regex = new RegExp(`${searchMemberInput.value}`, 'i');
@@ -238,6 +280,7 @@ searchMemberInput.addEventListener('input', () => {
     searchMemberInput.parentElement.classList.add('open');
   }
 });
+
 // FAQ
 document
   .querySelectorAll('.faq-answer-wrapper')
@@ -269,6 +312,7 @@ showAnswerBtns.forEach((btn) =>
   })
 );
 
+// burger menu
 const menuBtn = document.querySelector('.menu-btn');
 let menuOpen = false;
 menuBtn.addEventListener('click', () => {
