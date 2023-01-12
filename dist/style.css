@@ -1103,7 +1103,6 @@ footer .right .footer-social a i {
   #hero .container {
     margin: 0 !important;
     width: fit-content;
-    padding: 0 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
