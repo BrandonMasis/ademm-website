@@ -1308,6 +1308,12 @@ footer .right .footer-social a i {
   #hero .container .left .small-text {
     max-width: 20rem;
   }
+  #afiliacion {
+    height: 30rem;
+  }
+  #afiliacion .container {
+    height: 30rem;
+  }
   .cta-stats {
     display: none;
   }
@@ -1531,6 +1537,26 @@ footer .right .footer-social a i {
     border-right: 1px solid var(--lines);
     height: 100%;
   }
+  #requisitos .container .left .section-header {
+    margin-bottom: 0;
+  }
+  #requisitos .container .right {
+    height: 10rem;
+    margin-bottom: 0rem;
+  }
+  #preguntas-frecuentes {
+    margin-top: 5rem;
+  }
+  #preguntas-frecuentes .faq .section-header {
+    margin-bottom: 2rem;
+  }
+  #sobre-nosotros .container {
+    gap: 0;
+  }
+  #sobre-nosotros .right {
+    height: 10rem;
+    margin-bottom: 2rem;
+  }
   footer {
     height: fit-content;
   }
@@ -1543,6 +1569,7 @@ footer .right .footer-social a i {
     display: flex;
     flex-direction: column;
     border-right: 0;
+    padding: 2rem 0rem;
     width: 100%;
   }
   footer .left {
@@ -1563,12 +1590,109 @@ footer .right .footer-social a i {
     flex-direction: row;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
+  .tagline {
+    font-size: 14px;
+  }
   .nav-bar .logo img {
     width: 3rem !important;
     height: auto;
     animation-name: navTransition;
     animation-duration: 0.2s;
+  }
+  #_beneficios {
+    display: flex;
+    width: 100%;
+  }
+  #_beneficios .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  #_beneficios ._benefits {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  #_beneficios ._benefits ._benefit-option {
+    height: 140px;
+    overflow: hidden;
+    transition: 0.15s ease height;
+  }
+  #_beneficios ._benefits ._benefit-option > div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    height: 140px;
+    cursor: pointer;
+    background-size: cover;
+  }
+  #_beneficios ._benefits ._benefit-option > div:nth-child(1) h3 {
+    color: var(--white);
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  #_beneficios ._benefits ._benefit-option > div:nth-child(1) i {
+    color: var(--white);
+    transition: 0.15s ease transform;
+  }
+  #_beneficios ._benefits ._benefit-option:nth-child(1) > div:nth-child(1) {
+    background-position: 0rem;
+  }
+  #_beneficios ._benefits ._benefit-option:nth-child(2) > div:nth-child(1) {
+    background-position: 0rem;
+  }
+  #_beneficios ._benefits ._benefit-option:nth-child(3) > div:nth-child(1) {
+    background-position: 0rem;
+  }
+  #_beneficios ._benefits .option-benefits {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    margin: 0 2rem;
+    flex-direction: column;
+  }
+  #_beneficios ._benefits .option-benefits ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: fit-content;
+  }
+  #_beneficios ._benefits .option-benefits li {
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    max-width: 35rem;
+    color: var(--lightText);
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+  }
+  #_beneficios ._benefits .option-benefits .benefit-check {
+    background-color: var(--dark-accent);
+    color: var(--white);
+    border-radius: 50px;
+    display: table;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+    font-size: 12px;
+    width: 22px;
+    height: 22px;
+    min-height: 22px;
+    min-width: 22px;
+  }
+  #_beneficios ._benefits .option-benefits .benefit-check i {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
   }
   #hero .container .left .hero-heading {
     font-size: 24px;
