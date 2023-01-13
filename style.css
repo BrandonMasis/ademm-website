@@ -1477,16 +1477,16 @@ footer .right .footer-social a i {
     word-wrap: break-word;
     max-width: 22rem;
     font-size: 30px;
-    line-height: 30px;
+    line-height: 32px;
     width: 100% !important;
   }
   #hero .container .left .small-text {
     width: 100% !important;
+    line-height: 24px;
     word-break: keep-all;
     font-size: 16px;
-    max-width: 34rem !important;
+    max-width: 20rem !important;
     text-align: center;
-    max-width: 35rem;
   }
   #hero .container .left .hero-stats {
     display: flex;
