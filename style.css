@@ -229,19 +229,19 @@ nav .nav-bar .logo img {
   display: flex;
   justify-content: center;
 }
-#hero .container {
-  justify-content: center;
-  gap: 3rem;
-}
-#hero .container .hero-image {
+#hero .hero-image {
   display: none;
   border-radius: 4px;
   overflow: hidden;
   width: 100%;
 }
-#hero .container .hero-image img {
+#hero .hero-image img {
   height: auto;
   width: 100%;
+}
+#hero .container {
+  justify-content: center;
+  gap: 3rem;
 }
 #hero .container .left {
   flex-wrap: wrap;
@@ -1098,7 +1098,12 @@ footer .right .footer-social a i {
     margin-bottom: 6rem;
     margin-top: 2vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+  }
+  #hero .hero-image {
+    display: flex;
+    margin-bottom: 2rem;
   }
   #hero .container {
     margin: 0 !important;
@@ -1108,9 +1113,6 @@ footer .right .footer-social a i {
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
-  }
-  #hero .container .hero-image {
-    display: flex;
   }
   #hero .container .left {
     width: 100%;
@@ -1469,7 +1471,7 @@ footer .right .footer-social a i {
     width: 100% !important;
   }
   #hero .container .left .small-text {
-    width: 90% !important;
+    width: 100% !important;
     word-wrap: break-word;
     font-size: 16px;
     text-align: center;
