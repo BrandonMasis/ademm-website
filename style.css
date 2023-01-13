@@ -181,8 +181,8 @@ nav .nav-bar .logo img {
 
 .sticky {
   position: fixed;
-  padding: 0.5rem 0;
-  height: 5rem;
+  padding: 0.5rem 0rem;
+  height: fit-content;
   box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.15);
   background-color: var(--white);
 }
@@ -1444,6 +1444,13 @@ footer .right .footer-social a i {
     padding-top: 6px;
     padding-bottom: 0px;
   }
+  .section-header {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .small-text {
+    font-size: 16px;
+  }
   .nav-bar .logo img {
     width: 4rem !important;
     height: auto;
@@ -1566,6 +1573,7 @@ footer .right .footer-social a i {
   #hero .container .left .hero-heading {
     font-size: 24px;
     line-height: 28px;
+    max-width: 17rem;
   }
   #hero .container .left .small-text {
     font-size: 15px;
