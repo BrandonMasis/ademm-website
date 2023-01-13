@@ -91,8 +91,8 @@ nav{
         display: none;
         justify-content: center;
         align-items: center;
-        width: 80px;
-        height: 60px;
+        width: fit-content;
+        height: 50px;
         cursor: pointer;
         transition: all .5s ease-in-out;
         
@@ -151,7 +151,7 @@ nav{
             justify-content: center;
             
             img{
-                width: 5rem;
+                width: 6rem;
                 height: auto;
             }
           
@@ -1894,6 +1894,21 @@ footer{
 
 
 @media only screen and (max-width:725px){
+    .nav-bar{
+        
+        
+        .logo{
+         
+            
+            img{
+                width: 4rem !important;
+                height: auto;
+
+                animation-name: navTransition;
+                animation-duration: .2s;
+            }
+        }
+    }
     #hero{
         .container{
             padding: 0 2rem;
