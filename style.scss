@@ -86,57 +86,7 @@ nav{
     width: 100%;
     z-index: 10;
 
-    .menu-btn {
-        position: relative;
-        display: none;
-        justify-content: center;
-        align-items: center;
-        width: fit-content;
-        height: 50px;
-        cursor: pointer;
-        transition: all .5s ease-in-out;
-        
-      }
-      .menu-btn__burger {
-        width: 30px;
-        height: 4px;
-        background: var(--darkText);
-        border-radius: 2px;
-        box-shadow: 0 2px 5px rgba(255,101,47,.2);
-        transition: all .5s ease-in-out;
-      
-      &::before,
-      &::after {
-        content: '';
-        position: absolute;
-        width: 30px;
-        height: 4px;
-        background: var(--darkText);
-        border-radius: 2px;
-        box-shadow: 0 2px 5px rgba(255,101,47,.2);
-        transition: all .5s ease-in-out;
-      }
-      &::before {
-        transform: translateY(-10px);
-      }
-      &::after {
-        transform: translateY(10px);
-      }
-    }
-      /* ANIMATION */
-      .menu-btn.open .menu-btn__burger {
-        transform: translateX(-50px);
-        background: transparent;
-        box-shadow: none;
-
-      
-      &::before {
-        transform: rotate(45deg) translate(35px, -35px);
-      }
-      &::after {
-        transform: rotate(-45deg) translate(35px, 35px);
-      }
-    }
+   
 
     .nav-bar{
         width: 100%;
@@ -160,6 +110,97 @@ nav{
     }
 
 }
+
+.hamburger {
+	position: relative;
+	display: none;
+	width: 35px;
+	cursor: pointer;
+	
+	appearance: none;
+	background: none;
+	outline: none;
+	border: none;
+    z-index: 99;
+}
+
+.hamburger .bar, .hamburger:after, .hamburger:before {
+	content: '';
+    display: block;
+	width: 100%;
+	height: 5px;
+	background-color: var(--darkText);
+	margin: 6px 0px;
+    border-radius: 2px;
+	transition: 0.3s;
+}
+
+.hamburger.is-active:before {
+	transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active:after {
+	transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburger.is-active .bar {
+	opacity: 0;
+}
+
+.mobile-nav{
+    display: none;
+    position: fixed;
+    top: 0;
+    right:  -100%;
+    width: 100%;
+    min-height: 100vh;
+
+    z-index: 4;
+    background-color: white;
+    padding-top: 120px;
+	transition: 0.4s;
+    border: 1px solid var(--lines);
+    padding-top: 120px;
+    
+    li{
+        list-style: none;
+        
+    }
+
+
+    a{
+        display: block;
+        text-align: start;
+        
+        border-bottom: 1px solid var(--lines);
+        padding: 20px 2rem;
+       
+
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        
+        text-decoration: none;
+        letter-spacing: .02px;  
+
+        color: var(--darkText);
+
+        i{
+            margin-right: 1rem;
+        }
+       
+        
+      
+        
+    }
+
+}
+
+.mobile-nav.is-active {
+	right: 0;
+}
+
+
 
 .nav-links{
     display: flex;
@@ -1671,6 +1712,10 @@ footer{
 //   Tablet
 @media only screen and (max-width: 800px) {
     
+    .hamburger{
+        display: block;
+    }
+   
     .tagline{
         display: flex;
         font-family: 'Lato', sans-serif;
@@ -1683,6 +1728,8 @@ footer{
         margin-bottom: 2rem;
 
     }
+
+   
     #hero{
         .container{
             .left{
@@ -1695,9 +1742,7 @@ footer{
                     width: 28rem !important;
                 }
 
-                .small-text{
-                    max-width: 20rem;
-                }
+                
             }
 
 
@@ -1739,8 +1784,12 @@ footer{
                 animation-duration: .2s;
             }
         }
-    }
 
+    }
+    
+    .mobile-nav{
+        display: block;
+    }
 
     #buscar-afiliados{
         margin-top: 0 !important;
@@ -1901,6 +1950,7 @@ footer{
   }
 
 
+// phone
 @media only screen and (max-width:725px){
    #nav{
     padding-top: 6px;
@@ -2106,7 +2156,9 @@ footer{
     
 }
 
+// small phone
 @media only screen and (max-width:450px){
+    
     .tagline{
         font-size: 14px;
     }
@@ -2258,26 +2310,22 @@ footer{
      #hero{
          .container{
              
-             
              .left{
-             
+
+                .hero-heading{
+                
+                    font-size: 24px;
+                    line-height: 28px;
+                    max-width: 17rem;
+                
+                }
  
-                
-               
-             .hero-heading{
-                
-                 font-size: 24px;
-                 line-height: 28px;
-                 max-width: 17rem;
-                
-             }
- 
-             .small-text{
+                .small-text{
                  
-                 font-size: 15px;
+                    font-size: 16px;
                 
              
-             }
+                }  
  
              
             }
@@ -2285,8 +2333,6 @@ footer{
          
      }
 
-     
- 
-     
+       
      
  }
