@@ -128,7 +128,7 @@ nav{
 	content: '';
     display: block;
 	width: 100%;
-	height: 4px;
+	height: 3px;
 	background-color: var(--darkText);
 	margin: 6px 0px;
     border-radius: 2px;
@@ -136,11 +136,11 @@ nav{
 }
 
 .hamburger.is-active:before {
-	transform: rotate(-45deg) translate(-6px, 8px);
+	transform: rotate(-45deg) translate(-6px, 6px);
 }
 
 .hamburger.is-active:after {
-	transform: rotate(45deg) translate(-6px, -8px);
+	transform: rotate(45deg) translate(-6px, -7px);
 }
 
 .hamburger.is-active .bar {
@@ -177,7 +177,7 @@ nav{
         text-align: start;
         
         border-bottom: 1px solid var(--lines);
-        padding: 20px 2rem;
+        padding: 20px 1rem;
        
 
         font-family: 'DM Sans', sans-serif;
@@ -188,6 +188,7 @@ nav{
         letter-spacing: .02px;  
 
         color: var(--darkText);
+        margin: 0 1rem;
 
         i{
             margin-right: 1rem;
