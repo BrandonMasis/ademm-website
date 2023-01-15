@@ -315,14 +315,6 @@ showAnswerBtns.forEach((btn) =>
 // burger menu
 
 window.onload = function () {
-  window.addEventListener('scroll', function (e) {
-    if (window.pageYOffset > 100) {
-      document.querySelector('header').classList.add('is-scrolling');
-    } else {
-      document.querySelector('header').classList.remove('is-scrolling');
-    }
-  });
-
   const menu_btn = document.querySelector('.hamburger');
   const mobile_menu = document.querySelector('.mobile-nav');
 
@@ -331,3 +323,16 @@ window.onload = function () {
     mobile_menu.classList.toggle('is-active');
   });
 };
+
+const allMobile = document.querySelectorAll('.mobile-nav ul li a');
+allMobile.forEach((link) => {
+  link.addEventListener('click', (e) => {
+    e.target.parentElement.parentElement.parentElement.classList.remove(
+      'is-active'
+    );
+
+    document
+      .querySelector('.hamburger.is-active')
+      .classList.remove('is-active');
+  });
+});

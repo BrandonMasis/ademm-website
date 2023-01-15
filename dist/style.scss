@@ -921,8 +921,9 @@ nav{
 }
 
 .highlighted-match{
+    border-radius: 4px;
     background-color: var(--highlightOnWhite);
-    color: #746a4c;
+    color: #5e553d;
 }
 
 #requisitos{
@@ -1248,7 +1249,7 @@ nav{
 .footer-text{
     color: var(--footer-text);
     font-size: 16px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Dm sans', sans-serif;
     font-weight: 400;
     line-height: 1.7rem;
     margin-bottom: 1rem;
@@ -1264,6 +1265,9 @@ footer{
     height: 20rem;
     border-top: 1px rgba(85, 84, 84, 0.048) solid;
 
+    & *::selection{
+        background-color: #7c7c7c2d;
+    }
     .container{
         display: grid;
        
@@ -1565,6 +1569,7 @@ footer{
     
             .full-btn{
                 border: 0px;
+                
             }
         }
     }
@@ -1736,8 +1741,8 @@ footer{
         display: flex;
         font-family: 'Lato', sans-serif;
         font-size: 16px;
-        color: var(--darkText);
-        border: 1px solid var(--darkText);
+        color: var(--faq);
+        border: 1px solid var(--faq);
         border-radius: 50px;
         width: fit-content;
         padding:  .2rem 2rem;
@@ -1758,7 +1763,7 @@ footer{
     }
    
     #hero{
-        padding-top: 55px;
+        padding-top: 48px;
         .container{
             .left{
                 
@@ -1860,7 +1865,7 @@ footer{
                     display: flex;
                     justify-content: space-between;
                     align-items: flex-end;
-                    padding-bottom: 2rem;
+                    padding-bottom: 1.5rem;
                     padding-left: 2rem;
                     padding-right: 2rem;
                     height: 140px;
@@ -1873,7 +1878,8 @@ footer{
                         color: var(--white);
                         font-family: 'DM Sans', sans-serif;
                         font-size: 18px;
-                        font-weight: 600; 
+                        font-weight: 600;
+                        max-width: 15rem;
                     }
                     i{
                         color: var(--white);
@@ -2094,8 +2100,9 @@ footer{
                 height: fit-content;
                 gap: .5rem;
                 flex-direction: column;
-    
+                
                 .btn{
+                    font-weight: 200 !important;
                     width: 100%;
                     height: 3.5rem;
                     border: 1px solid var(--darkText);
@@ -2250,7 +2257,8 @@ footer{
                     display: flex;
                     justify-content: space-between;
                     align-items: flex-end;
-                    padding-bottom: 2rem;
+                    background-color: #5e553d;
+                    padding-bottom: 1.5rem;
                     padding-left: 2rem;
                     padding-right: 2rem;
                     height: 140px;
@@ -2267,6 +2275,7 @@ footer{
                     }
                     i{
                         color: var(--white);
+                        font-size: 13px;
                         transition: .15s ease transform;
                     }
                     
