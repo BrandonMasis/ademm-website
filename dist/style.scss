@@ -718,12 +718,12 @@ nav{
 
     align-items: flex-start;
     
-    & *::selection{
+    & .small-text::selection,& .section-header::selection{
         background-color: var(--highlightOnRed);
     }
     
     
-
+   
     .container{
 
         max-width: 100%;
@@ -735,13 +735,15 @@ nav{
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        
+          
        
 
         .ivy{
             grid-column: 1/2;
             grid-row: 1/3;
             height: 70rem;
-            opacity: 55%;
+            opacity: 60%;
             position: relative;
             transform: rotate(-4deg);
             user-select: none;
@@ -754,7 +756,7 @@ nav{
         }
         .ivy2{
             height: 70rem;
-            opacity: 55%;
+            opacity: 60%;
             user-select: none;
             position: relative;
             top: 300px;
@@ -779,6 +781,8 @@ nav{
             justify-self: center;
             grid-column: -3/-2;
             grid-row: -2/-1;
+
+            
         }
     }
     .section-header{
@@ -788,6 +792,9 @@ nav{
         margin-top: 8rem;
         width: 100%;
         text-align: center;
+        
+      
+       
     }
     p{  
     
@@ -855,7 +862,7 @@ nav{
             align-items: center;
             border-radius: 0 4px 4px 0;
             width: fit-content;
-            
+            user-select: none;
             padding-right: 1.5rem;
             padding-left: 1.5rem;
             
@@ -894,8 +901,6 @@ nav{
 }
 
 .search-member-results{
-    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
-    background-color: var(--white);
     position: relative;
     width: 100%;
     
@@ -904,27 +909,58 @@ nav{
 
     max-height: 15.5rem;
     overflow-y: scroll;
+    
+    &::-webkit-scrollbar-track{
+        border-radius: 0 0 5px 0;
+     
+        
+    }
+    
+    &::-webkit-scrollbar-thumb{
+        border-radius: 3px;
+
+    }
+    
 
     h2{
         font-family: 'DM Sans', sans-serif;
         font-size: 18px;
         color: var(--darkText);
-        padding: 1rem 1.5rem;
-        border-bottom: 1px solid var(--lines);
+        
+        
     }
-
-    & h2:last-child{
+    
+     h2:last-child{
         border-bottom: 0;
     }
 
     border-radius: 0px 0px 5px 5px;
-
+    
 }
+.result{
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.03) 0px 0px 5px 0px inset;
+    border-bottom: 1px solid var(--lines);
+    background-color: var(--white);
+    justify-content: space-between;
 
+    
+}
 .highlighted-match{
     border-radius: 4px;
     background-color: var(--highlightOnWhite);
     color: #5e553d;
+}
+
+.result-tag{
+    color: var(--darkText) !important;
+    width: fit-content !important;
+    font-size: 14px !important; 
+    font-family: 'DM Sans', sans-serif;
+    font-weight: lighter;
 }
 
 #requisitos{
@@ -952,17 +988,16 @@ nav{
 
             .requirements{
                 margin-top: 2rem;
-                padding-left: .5rem;  
+                padding-left: 0rem;  
                
                 li{
                     display: flex;
-                    gap: 1rem;
+                    gap: .8rem;
                     text-decoration: none;
                
                     &::before{
                     position: relative;
-                    right: 7px;
-                    top: 10px;
+                    top: 9px;
                     color: transparent;
                     content: "o";
                     width: 10px;
@@ -1014,7 +1049,7 @@ nav{
             grid-column: 1/2;
             
             height: 50rem;
-            opacity: 55%;
+            opacity: 60%;
             left: 40px;
             position: relative;
             top: -60px;
@@ -1027,7 +1062,7 @@ nav{
         }
         .ivy2{
             height: 50rem;
-            opacity: 55%;
+            opacity: 60%;
             -webkit-user-drag: none;
             user-select: none;
             position: relative;
@@ -1176,6 +1211,7 @@ nav{
         i{
 
             transition: .2s ease transform;
+            color: var(--darkText);
         }
     }
 
@@ -2139,6 +2175,10 @@ footer{
             .left{
                 .section-header{
                     margin-bottom: 0;
+                    margin-top: 1rem;
+                    font-size: 30px;
+                    line-height: normal;
+                    text-align: start;
                 }
             }
             .right{
@@ -2147,9 +2187,35 @@ footer{
             }
         }
     }
+
+    #buscar-afiliados{
+        .container{
+            & > div:nth-child(2){
+                justify-content: start;
+                align-items: flex-start;
+
+            }
+            .section-header{
+                
+                text-align: start;
+                font-size: 30px;
+                line-height: normal;
+            }
+            .small-text{
+                text-align: start;
+            }
+        }
+    }
+
     #preguntas-frecuentes{
         margin-top: 5rem;
+        .section-header{
+            font-size: 27px;
+            margin-bottom: -5px;
+        }
         .faq{
+            
+            align-items: start;
             .section-header{
                 margin-bottom: 2rem;
             }
