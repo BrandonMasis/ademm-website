@@ -235,18 +235,21 @@ benefitOption.forEach((option) => {
 // mobile benefits
 
 const _benefitOptions = document.querySelectorAll(`._benefit-option`);
-_benefitOptions.forEach((option) => {
-  option.addEventListener('click', () => {
-    let bodyOffsetHeight =
-      option.querySelector('.option-benefits').offsetHeight;
-    let chevron = option.querySelector(`i`);
 
-    if (option.offsetHeight == 140) {
-      option.setAttribute('style', `height:${bodyOffsetHeight + 140}px`);
-      chevron.style.transform = 'rotate(180deg)';
-    } else {
-      option.setAttribute('style', `height: 140px`);
-      chevron.style.transform = 'rotate(0deg)';
+_benefitOptions.forEach((option) => {
+  option.addEventListener('click', (e) => {
+    if (e.target.classList[0] == 'touchable') {
+      let bodyOffsetHeight =
+        option.querySelector('.option-benefits').offsetHeight;
+      let chevron = option.querySelector(`i`);
+
+      if (option.offsetHeight == 140) {
+        option.setAttribute('style', `height:${bodyOffsetHeight + 140}px`);
+        chevron.style.transform = 'rotate(180deg)';
+      } else {
+        option.setAttribute('style', `height: 140px`);
+        chevron.style.transform = 'rotate(0deg)';
+      }
     }
   });
 });
