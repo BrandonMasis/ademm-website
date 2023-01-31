@@ -261,16 +261,16 @@ searchMemberInput.addEventListener('input', () => {
   let resultHtml = '';
 
   results.forEach((result) => {
-    resultHtml += `<h2>${result.replaceAll(
+    resultHtml += `<div class="result"><h2>${result.replaceAll(
       result.match(regex),
       `<span class="highlighted-match">${result.match(regex)}</span>`
-    )}</h2>`;
+    )}</h2><p class="result-tag">Miembro verificado</p></div>`;
   });
 
   searchMemberResults.innerHTML = resultHtml;
   totalMembers.textContent = results.length;
   if (totalMembers.textContent == 0) {
-    searchMemberResults.innerHTML = `<h2>No hay resultados para "<span class="highlighted-match">${searchMemberInput.value}</span>"</h2>`;
+    searchMemberResults.innerHTML = `<div class="result"><h2>No hay resultados para "<span class="highlighted-match">${searchMemberInput.value}</span>"</h2></div>`;
   }
   if (searchMemberInput.value == '') {
     searchMemberResults.innerHTML = '';
