@@ -324,6 +324,8 @@ nav{
     margin-top: calc(8.5vh);
     display: flex;
     justify-content: center;
+
+    
     
     .hero-image{
         display: none;
@@ -340,6 +342,9 @@ nav{
         justify-content: center;
         gap: 3rem;
 
+        // chat
+
+        // opacity: 0;
         
         
         .left{
@@ -402,29 +407,40 @@ nav{
 
 
   
-.heroAnimation1{
-    animation: slideUp .5s ease-in-out forwards;
-    transition: all .5s ease-in-out;
-}
-.heroAnimation2{
-    animation: slideUp .65s ease-in-out forwards;
-    transition: all .65s ease-in-out;
-}
-.heroAnimation3{
-    animation: slideUp .8s ease-in-out forwards;
-    transition: all .8s ease-in-out;
-}
-.heroAnimation3{
-    animation: slideUp .95s ease-in-out forwards;
-    transition: all .95s ease-in-out;
-    width: 100%;
-}
-.heroAnimation4{
-    animation: slideUp 1.1s ease-in-out forwards;
-    transition: all 1.1s ease-in-out;
-    width: 100%;
-}
 
+.heroAnimation1 {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideUp .3s ease-in-out forwards;
+    animation-delay: 0;
+  }
+  
+  .heroAnimation2 {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideUp .45s ease-in-out forwards;
+    animation-delay: 0.14;
+
+   
+  }
+  
+  .heroAnimation3 {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideUp .6s ease-in-out forwards;
+    animation-delay: 0.3;
+
+    
+  }
+  
+  .heroAnimation4 {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideUp .9s ease-in-out forwards;
+    animation-delay: 0.45;
+    
+    width: 100%;
+  }
 
 
 
@@ -1485,13 +1501,14 @@ footer{
 }
 
 
-.reveal{
+.reveal {
     position: relative;
     transform: translateY(80px);
     opacity: 0;
     transition: 1s all ease;
   }
-  .reveal.active{
+  
+  .reveal.active {
     transform: translateY(0);
     opacity: 1;
   }
@@ -1513,12 +1530,14 @@ footer{
   @keyframes slideUp {
     0% {
       opacity: 0;
-      transform: translateY(20px);
+      transform: translateY(50px);
     }
     100% {
+      opacity: 1;
       transform: translateY(0);
     }
   }
+  
   
 
 @keyframes navTransition {
