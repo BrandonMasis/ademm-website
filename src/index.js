@@ -17,15 +17,81 @@ const searchMemberResults = document.querySelector('.search-member-results');
 const totalMembers = document.querySelector('.total-members h2');
 
 const memberList = [
-  'Carlos Gomez Alvares',
-  'Nancy Mancia Gomez',
-  'Carla Gomez Fernandez',
-  'Daniel Mora Alvares',
-  'Julia Alvares Masis',
-  'Emilia gomez hernandez',
-  'Gabriela Vargas',
-  'Magaly Vargas',
-  'Carlos chacon',
+  'Silvia Gonzalez Navarro',
+  'Joyce Beita',
+  'Alex Arias',
+  'Carolina Brenes',
+  'Flory Araya',
+  'Ivannia Montero',
+  'Ruth Serrano',
+  'Keylin Soto',
+  'Flor Batista Bastista',
+  'Juliana Meza',
+  'Yessenia (Apellido)',
+  'Armicio Cabezas Avalos',
+  'Elizabeth Peña Oporto',
+  'Gabriela Vargas Ramirez',
+  'Jessica Alvarez',
+  'Priscila',
+  'Lilian Morales',
+  'Cynthia Gomez Quiros',
+  'Victor Ureña',
+  'Yanis Serrano Gonzalez',
+  'Royner Campos',
+  'Mitzi Miranda',
+  'Karima Matarrita',
+  'Jessica Varela Rodriguez',
+  'Karla Cubillo',
+  'Lissette Peña Ulloa',
+  'Roxana Corella',
+  'Sherryl Campos Villalobos',
+  'Veronica Zumbado',
+  'Asly Garcia Granados',
+  'Dayana Porras Prieto',
+  'Karen Alpizar',
+  'Susan Zelaya',
+  'Pamela Perez',
+  'Kathia Mora Corrales',
+  'Adriana Solano Solano',
+  'Luisa Ramos',
+  'Magaly Mora Castro',
+  'María de los Angeles Martinez',
+  'Nayiri Lopez',
+  'Cynthia Mora Zuñiga',
+  'Ana Martinez',
+  'Daniela Guadamuz/Clementina Carabaca/Charlene Guadamuz/',
+  'Johnny Alejandro Madriz Aguilar',
+  'Esteban Barrantes Munoz',
+  'Ana Mailid Cedeño',
+  'Amyliz Academia Liseth Borge',
+  'Guillermo Gutierrez',
+  'Katheryne Cerdas Fonseca',
+  'Pamela Morera',
+  'Jeimy Arce',
+  'Elena Lizano',
+  'Esther Granados',
+  'Gabriela Quiros',
+  'Monica Matamoros',
+  'Kimberly M. Get',
+  'Ginger Barrantes',
+  'Isabel Vega Moya',
+  'Christian Chinchilla',
+  'Claudia Mora Araya',
+  'Joselyn Ramirez T',
+  'Roxana Alvarado',
+  'Mauren Novoa',
+  'Raquel Delgado',
+  'Hazel Boquin',
+  'Beatriz Sequeira',
+  'Yoheny Chavez Fonseca',
+  'Maria Saray Arias Varela',
+  'Ana Lady Marin',
+  'Joselin Blanco Sanchez',
+  'Karla Villareyna Salguera',
+  'Mariela Fonseca',
+  'Julio Jose Arce Rugama',
+  'Susana Romero',
+  'Ana Vielka Vargas San Lee',
 ];
 
 // benefits
@@ -340,21 +406,23 @@ allMobile.forEach((link) => {
   });
 });
 
-function reveal() {
-  var reveals = document.querySelectorAll('.reveal');
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 150;
-    if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add('active');
-    } else {
-      reveals[i].classList.remove('active');
+document.addEventListener('DOMContentLoaded', function () {
+  let windowHeight = window.innerHeight;
+  const elementVisible = 100;
+
+  function reveal() {
+    var reveals = document.querySelectorAll('.reveal');
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add('active');
+      } else {
+        reveals[i].classList.remove('active');
+      }
     }
   }
-}
 
-window.addEventListener('scroll', reveal);
-
-// To check the scroll position on page load
-reveal();
+  window.addEventListener('scroll', reveal);
+});
