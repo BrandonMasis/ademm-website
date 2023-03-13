@@ -408,7 +408,7 @@ allMobile.forEach((link) => {
 
 document.addEventListener('DOMContentLoaded', function () {
   let windowHeight = window.innerHeight;
-  const elementVisible = 100;
+  const elementVisible = 150;
 
   function reveal() {
     var reveals = document.querySelectorAll('.reveal');
