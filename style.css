@@ -1523,15 +1523,15 @@ footer .right .footer-social a i {
     transition: 0.15s ease transform;
   }
   #_beneficios ._benefits ._benefit-option:nth-child(1) > div:nth-child(1) {
-    background-image: url(./images/Untitled\ \(12\).png);
+    background-image: url(./images/mobile-benefits1.webp);
     background-position: 0rem -3rem;
   }
   #_beneficios ._benefits ._benefit-option:nth-child(2) > div:nth-child(1) {
-    background-image: url(./images/Untitled\ \(13\).png);
+    background-image: url(./images/mobile-benefits2.webp);
     background-position: 0rem -3rem;
   }
   #_beneficios ._benefits ._benefit-option:nth-child(3) > div:nth-child(1) {
-    background-image: url(./images/Untitled\ \(11\).png);
+    background-image: url(./images/mobile-benefits3.webp);
     background-position: 0rem -3rem;
   }
   #_beneficios ._benefits .option-benefits {
