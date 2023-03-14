@@ -1,9 +1,3 @@
-setTimeout(function () {
-  document.body.className = '';
-}, 500);
-
-// body preload
-
 const showAnswerBtns = document.querySelectorAll('.show-answer');
 const faqItems = document.querySelectorAll('.faq-item');
 
@@ -225,6 +219,12 @@ const salonBenefitsList2 = `
 </li>
 
 `;
+
+// setTimeout(function () {
+//   document.body.className = '';
+// }, 500);
+
+// body preload
 
 window.addEventListener('scroll', () => {
   heroContainer.classList.toggle('afterSticky', window.scrollY > 0);

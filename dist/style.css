@@ -67,16 +67,17 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 1rem;
   width: 100%;
   z-index: 10;
+  padding: 1rem 0rem;
 }
 nav .nav-bar {
+  height: 8.5vh;
   width: 100%;
   max-width: 1080px;
   display: flex;
   justify-content: space-between;
-  margin: 0 2rem;
+  margin: 0rem 2rem;
 }
 nav .nav-bar .logo {
   display: flex;
@@ -84,8 +85,8 @@ nav .nav-bar .logo {
   justify-content: center;
 }
 nav .nav-bar .logo img {
-  width: 6rem;
-  height: auto;
+  width: auto;
+  height: 95%;
 }
 
 .hamburger {
@@ -211,7 +212,6 @@ nav .nav-bar .logo img {
 .sticky {
   position: fixed;
   padding: 0.5rem 0rem;
-  height: fit-content;
   box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.15);
   background-color: var(--white);
 }
@@ -225,8 +225,6 @@ nav .nav-bar .logo img {
   align-items: center;
 }
 .sticky .nav-bar .logo img {
-  width: 5rem;
-  height: auto;
   animation-name: navTransition;
   animation-duration: 0.2s;
 }
@@ -312,28 +310,24 @@ nav .nav-bar .logo img {
   opacity: 0;
   transform: translateY(50px);
   animation: slideUp 0.3s ease-in-out forwards;
-  animation-delay: 0;
 }
 
 .heroAnimation2 {
   opacity: 0;
   transform: translateY(50px);
   animation: slideUp 0.45s ease-in-out forwards;
-  animation-delay: 0.14;
 }
 
 .heroAnimation3 {
   opacity: 0;
   transform: translateY(50px);
   animation: slideUp 0.6s ease-in-out forwards;
-  animation-delay: 0.3;
 }
 
 .heroAnimation4 {
   opacity: 0;
   transform: translateY(50px);
   animation: slideUp 0.9s ease-in-out forwards;
-  animation-delay: 0.45;
   width: 100%;
 }
 
@@ -615,6 +609,7 @@ nav .nav-bar .logo img {
   grid-column: 1/2;
   grid-row: 1/3;
   height: 70rem;
+  width: auto;
   opacity: 60%;
   position: relative;
   transform: rotate(-4deg);
@@ -1175,20 +1170,12 @@ footer .right .footer-social a i {
 }
 @keyframes slideUp {
   0% {
-    opacity: 0;
+    opacity: 0%;
     transform: translateY(50px);
   }
   100% {
-    opacity: 1;
+    opacity: 100%;
     transform: translateY(0);
-  }
-}
-@keyframes navTransition {
-  0% {
-    width: 4rem;
-  }
-  100% {
-    width: 5rem;
   }
 }
 @keyframes resize {
@@ -1212,14 +1199,14 @@ footer .right .footer-social a i {
     display: none;
   }
   nav {
-    padding: 0;
+    padding: 0.4rem 0rem;
   }
   .section-header {
     font-size: 28px;
   }
   #hero {
     margin-bottom: 6rem;
-    margin-top: 2vh;
+    margin-top: 0rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1434,6 +1421,9 @@ footer .right .footer-social a i {
     background-color: var(--white);
     box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.15);
   }
+  nav .nav-bar {
+    height: 3rem;
+  }
   .afterSticky {
     padding-top: 0;
   }
@@ -1461,9 +1451,10 @@ footer .right .footer-social a i {
   nav .menu-btn {
     display: flex;
   }
-  .nav-bar .logo img {
-    width: 4rem !important;
-    height: auto;
+  nav .nav-bar {
+    height: 4rem;
+  }
+  nav .nav-bar .logo img {
     animation-name: navTransition;
     animation-duration: 0.2s;
   }
@@ -1600,7 +1591,6 @@ footer .right .footer-social a i {
     font-size: 16px;
   }
   .nav-bar .logo img {
-    width: 4rem !important;
     height: auto;
     animation-name: navTransition;
     animation-duration: 0.2s;
@@ -1719,15 +1709,23 @@ footer .right .footer-social a i {
   #preguntas-frecuentes {
     margin-top: 5rem;
   }
+  #preguntas-frecuentes .container {
+    margin-left: 0;
+    margin-right: 0;
+  }
   #preguntas-frecuentes .section-header {
     font-size: 27px;
     margin-bottom: -5px;
+    margin-left: 2rem;
   }
   #preguntas-frecuentes .faq {
     align-items: start;
   }
   #preguntas-frecuentes .faq .section-header {
     margin-bottom: 2rem;
+  }
+  #preguntas-frecuentes .faq .faq-item h3, #preguntas-frecuentes .faq .faq-item .faq-answer {
+    margin-left: 2rem;
   }
   #sobre-nosotros .container {
     gap: 0;
