@@ -2,6 +2,14 @@
 <html lang="ES">
 
 <head>
+
+  <link rel="apple-touch-icon" sizes="180x180"
+    href="./favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32"
+    href="./favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16"
+    href="./favicon/favicon-16x16.png">
+  <link rel="manifest" href="./favicon/site.webmanifest">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport"
@@ -16,8 +24,11 @@
     href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Text&family=Lato:wght@300;400;700&display=swap"
     rel="stylesheet">
 
-  <a href="https://ademmcr.com/sitemap.xml"
+  <link rel="canonical" href="https://ademmcr.com/">
+
+  <a href="https://ademmcr.com/sitemap_index.xml"
     style="display: none;">Sitemap</a>
+
   <link rel="stylesheet" href="./style.css">
   <script src="./main.js" defer></script>
   <meta name="description"
@@ -38,13 +49,15 @@
     crossorigin="anonymous" referrerpolicy="no-referrer">
 
 
-  <link rel="apple-touch-icon" sizes="180x180"
-    href="./favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32"
-    href="./favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16"
-    href="./favicon/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <!-- Schema.org metadata -->
+  <script type="application/ld+json">
+      {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "ADEMM",
+          "url": "https://ademmcr.com"
+      }
+  </script>
 
 
 </head>
@@ -106,7 +119,8 @@
   <!-- HERO -->
   <section id="hero">
     <div class="hero-image">
-      <img src="./images/mobile-hero.webp" alt="">
+      <img src="./images/mobile-hero.webp"
+        alt="Imagen de un salon de belleza">
     </div>
     <div class="container">
       <div class="left">
@@ -258,7 +272,8 @@
       <div class="benefits-display">
         <div class="row">
 
-          <img src="./images/academy-benefits.webp" alt="">
+          <img src="./images/academy-benefits.webp"
+            alt="Imagen de un salon de belleza">
 
           <div class="benefits">
             <ul>
@@ -322,7 +337,8 @@
 
             </ul>
           </div>
-          <img src="./images/academy-benefits2.webp" alt="">
+          <img src="./images/academy-benefits2.webp"
+            alt="Imagen de un salon de belleza">
         </div>
       </div>
     </div>
@@ -501,10 +517,11 @@
 
   <section id="buscar-afiliados">
     <div class="container reveal">
-      <img class="ivy" src="./images/ivy.webp" alt="">
+      <img class="ivy" src="./images/ivy.webp"
+        alt="Grafico de fondo">
       <div>
-        <div class="section-header">Quieres saber si tu
-          academia esta afiliada?
+        <div class="section-header">Como saber si una
+          academia está avalada por ADEMM ?
         </div>
         <p class="small-text">Puedes realizar una busqueda,
           escribiendo el nombre del director o directora de
@@ -526,7 +543,8 @@
         <div class="search-member-results">
         </div>
       </div>
-      <img class="ivy2" src="./images/ivy.webp" alt="">
+      <img class="ivy2" src="./images/ivy.webp"
+        alt="Grafico de fondo">
     </div>
   </section>
   <section id="requisitos" class="reveal">
@@ -557,7 +575,8 @@
   <section id="afiliacion">
 
     <div class="container reveal">
-      <img class="ivy" src="./images/ivy.webp" alt="">
+      <img class="ivy" src="./images/ivy.webp"
+        alt="Grafico de fondo">
       <div class="content">
         <div class="section-header">No te pierdas de los
           beneficios !</div>
@@ -565,15 +584,15 @@
           alla y disfruta de los beneficios de ser un socio
           ademm.</p>
         <div class="afiliation-boxes">
-          <div class="btn price">
-            ₡150 000 / Anualmente
-          </div>
-          <a class="btn full-btn">Contactanos por Whatsapp
+
+          <a href="https://wa.me/message/QMKPV722WTEJG1"
+            class="btn full-btn">Contactanos por Whatsapp
             <i class="fa-solid fa-chevron-right"></i>
           </a>
         </div>
       </div>
-      <img class="ivy2" src="./images/ivy.webp" alt="">
+      <img class="ivy2" src="./images/ivy.webp"
+        alt="Grafico de fondo">
     </div>
 
   </section>
@@ -589,11 +608,16 @@
             <h3>Que requisitos necesito para afiliarme?</h3>
             <div class="faq-answer-wrapper">
               <p class="faq-answer">
-                Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Cras
-                nunc lectus, posuere in dolor vitae, semper
-                ali.
-                Proin vitae feugiat tellus. Puedes
+                Para afiliarte a nuestro sitio necesitas
+                tener fotografías de tus certificados
+                profesionales, de tu cédula o pasaporte, el
+                nombre y dirección de la academia donde los
+                obtuviste, y haber pagado la cuota de
+                afiliación. Esto es necesario para
+                asegurarnos de que nuestros afiliados sean
+                profesionales cualificados y comprometidos.
+                Si tienes alguna duda o necesitas más
+                información, contáctanos.
                 <span> <a
                     href="/dist/index.html#contact">contactarnos</a></span>
 
@@ -707,21 +731,23 @@
 
         <h2 class="section-header">Nuestra mision</h2>
         <p class="small-text">
-          Vestibulum eu quam nec neque pellentesque
-          efficitur id eget nisl,
-          proin porta est convallis lacus blandit pretium
-          sed non
+          En Ademm, nuestra misión es avalar a profesionales
+          de la belleza, academias, salones, estéticas y
+          barberías, con el fin de apoyarlos en el proceso
+          de emprendimiento y garantizar a los clientes una
+          experiencia de calidad en el servicio que reciben.
           <br><br>
 
-          Maecenas lacinia non orci at aliquam. Donec
-          finibus, urna bibendum
-          ultricies laoreet, augue eros luctus sapien, ut
-          euismod leo tortor
-          ac.
+          Desde nuestra creación hace 15 años, nos hemos
+          dedicado a certificar a profesionales en todo el
+          mundo para que puedan dar inicio a su propio
+          negocio o expandir su presencia en el mercado.
+          Creemos que, al avalar la experiencia y
+          habilidades de estos profesionales, podemos
+          impulsar el crecimiento y la excelencia en la
+          industria de la belleza y la estética.
           <br><br>
-          Proin porta est convallis lacus blandit pretium
-          sed non enim, non
-          orci at aliquam.
+
         </p>
 
       </div>
