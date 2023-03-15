@@ -224,10 +224,6 @@ nav .nav-bar .logo img {
   justify-content: center;
   align-items: center;
 }
-.sticky .nav-bar .logo img {
-  animation-name: navTransition;
-  animation-duration: 0.2s;
-}
 
 .container {
   display: flex;
@@ -610,7 +606,7 @@ nav .nav-bar .logo img {
   grid-row: 1/3;
   height: 70rem;
   width: auto;
-  opacity: 60%;
+  opacity: 65%;
   position: relative;
   transform: rotate(-4deg);
   user-select: none;
@@ -621,7 +617,7 @@ nav .nav-bar .logo img {
 }
 #buscar-afiliados .container .ivy2 {
   height: 70rem;
-  opacity: 60%;
+  opacity: 65%;
   user-select: none;
   position: relative;
   top: 300px;
@@ -838,6 +834,18 @@ nav .nav-bar .logo img {
   margin-top: 8rem;
   height: 40rem;
 }
+#afiliacion .hollow-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: var(--white);
+  border: 1px solid var(--white);
+}
+#afiliacion .hollow-btn:hover {
+  border: 1px solid var(--footer-text);
+  background-color: var(--light-accent);
+}
 #afiliacion .container {
   max-width: 100%;
   display: grid;
@@ -852,7 +860,7 @@ nav .nav-bar .logo img {
 #afiliacion .container .ivy {
   grid-column: 1/2;
   height: 50rem;
-  opacity: 60%;
+  opacity: 65%;
   left: 40px;
   position: relative;
   top: -60px;
@@ -862,7 +870,7 @@ nav .nav-bar .logo img {
 }
 #afiliacion .container .ivy2 {
   height: 50rem;
-  opacity: 60%;
+  opacity: 65%;
   -webkit-user-drag: none;
   user-select: none;
   position: relative;
@@ -1269,6 +1277,9 @@ footer .right .footer-social a i {
     display: none;
     margin-bottom: 2.5rem;
   }
+  #hero .heroAnimation3 {
+    width: 100%;
+  }
   #hero .mobile-btns {
     display: flex;
     width: 100%;
@@ -1454,10 +1465,6 @@ footer .right .footer-social a i {
   nav .nav-bar {
     height: 4rem;
   }
-  nav .nav-bar .logo img {
-    animation-name: navTransition;
-    animation-duration: 0.2s;
-  }
   .mobile-nav {
     display: block;
   }
@@ -1591,7 +1598,7 @@ footer .right .footer-social a i {
     font-size: 16px;
   }
   .nav-bar .logo img {
-    height: auto;
+    height: 3rem;
     animation-name: navTransition;
     animation-duration: 0.2s;
   }
