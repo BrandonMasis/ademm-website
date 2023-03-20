@@ -90,35 +90,35 @@ const memberList = [
 
 // benefits
 const academyBenefitsList1 = `
+
 <li><span class="benefit-check"><i
       class="fa-solid fa-check"></i></span>Respaldo
-  de las certificaciones (talleres,seminarios
-  y cursos) con sello de calidad ademm,
-  presencial y en linea</li>
+  de las certificaciones (talleres, seminarios
+  y cursos) con sello de calidad Ademm,
+  presenciales y en línea</li>
 <li>
   <span class="benefit-check"><i
       class="fa-solid fa-check"></i></span>
-  Cartas de certificacion academica para
-  instituciones publicas o privadas
+  Cartas de certificación académica para
+  instituciones públicas o privadas
 </li>
 <li>
   <span class="benefit-check"><i
       class="fa-solid fa-check"></i></span>
-  Difusion de cursos y productos o servicios
+  Difusión de cursos y productos o servicios
 </li>
 <li>
   <span class="benefit-check"><i
       class="fa-solid fa-check"></i></span>
-  Carnet y certificado con codigo de
-  verificacion
+  Carnet y certificado con código de
+  verificación
 </li>
 <li><span class="benefit-check"><i
-      class="fa-solid fa-check"></i></span>Verificacion
+      class="fa-solid fa-check"></i></span>Verificación
   de estudios a nivel internacional (exclusivo
   para socios)</li>
 `;
-
-const academyBenefitsList2 = ` 
+const academyBenefitsList2 = `
 
 <li>
   <span class="benefit-check"><i
@@ -129,28 +129,27 @@ const academyBenefitsList2 = `
 <li>
   <span class="benefit-check"><i
       class="fa-solid fa-check"></i></span>
-  Consultorias y asesoramiento
+  Consultorías y asesoramiento
 </li>
 <li>
   <span class="benefit-check"><i
       class="fa-solid fa-check"></i></span>
   Bolsa de empleo
 </li>
-
 <li>
   <span class="benefit-check"><i
       class="fa-solid fa-check"></i></span>
-  Descuento en maestrias internacionales y
+  Descuento en maestrías internacionales y
   curso de formadores en belleza, para
-  planeamiento y evaluacion
+  planificación y evaluación
 </li>
-
 `;
 
 const studentBenefitsList1 = `
+
 <li><span class="benefit-check"><i
       class="fa-solid fa-check"></i></span>Carta
-  de idoneidad gratuita, al graduarte
+  de idoneidad gratuita al graduarte
   en una academia avalada</li>
 <li>
   <span class="benefit-check"><i
@@ -165,9 +164,9 @@ const studentBenefitsList1 = `
 <li>
   <span class="benefit-check"><i
       class="fa-solid fa-check"></i></span>
-  Carta de idoneidad gratuita para tramite de
-  patente para apertura del salon de belleza
-  (segun lo dicta la reforma del reglamento N°
+  Carta de idoneidad gratuita para trámite de
+  patente para apertura del salón de belleza
+  (según lo dicta la reforma del reglamento N°
   42942-S, del decreto ejecutivo 18329.)
 </li>
 `;
@@ -175,15 +174,15 @@ const studentBenefitsList1 = `
 const salonBenefitsList1 = ` 
 <li><span class="benefit-check"><i
       class="fa-solid fa-check"></i></span>Carta
-  de idoneidad gratuita para tramite de
-  patente para apertura del salon de belleza
-  (segun lo dicta la reforma del reglamento N°
+  de idoneidad gratuita para trámite de
+  patente para apertura del salón de belleza
+  (según lo dicta la reforma del reglamento N°
   42942-S, del decreto ejecutivo 18329.)</li>
 <li>
   <span class="benefit-check"><i
       class="fa-solid fa-check"></i></span>
-  Carnet y certificado con codigo de
-  verificacion
+  Carnet y certificado con código de
+  verificación
 </li>
 <li>
   <span class="benefit-check"><i
@@ -203,7 +202,7 @@ const salonBenefitsList2 = `
 <li>
   <span class="benefit-check"><i
       class="fa-solid fa-check"></i></span>
-  Consultorias y asesoramiento
+  Consultorías y asesoramiento
 </li>
 <li>
   <span class="benefit-check"><i
@@ -213,9 +212,9 @@ const salonBenefitsList2 = `
 <li>
   <span class="benefit-check"><i
       class="fa-solid fa-check"></i></span>
-  Descuento en maestrias internacionales y
+  Descuento en maestrías internacionales y
   curso de formadores en belleza, para
-  planeamiento y evaluacion
+  planificación y evaluación
 </li>
 
 `;
@@ -426,3 +425,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   window.addEventListener('scroll', reveal);
 });
+
+const academyBenefits = document.querySelector(
+  '.benefit-option.actual-tab[data-option="academy-benefits"]'
+);
+
+academyBenefits.click();
