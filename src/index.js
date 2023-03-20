@@ -424,9 +424,4 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   window.addEventListener('scroll', reveal);
-  academyBenefits.click();
 });
-
-const academyBenefits = document.querySelector(
-  '.benefit-option.actual-tab[data-option="academy-benefits"]'
-);
