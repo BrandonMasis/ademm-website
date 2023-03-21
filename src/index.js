@@ -165,7 +165,7 @@ benefitOption.forEach((option) => {
       case 'academy-benefits':
         benefitsDisplay.innerHTML = `<div class="row">
 
-        <img src="./images/academy-benefits.webp" alt="">
+        <img src="./images/academy-benefits1.webp" alt="">
 
         <div class="benefits">
         <ul>
