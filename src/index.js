@@ -97,7 +97,7 @@ const studentBenefitsList1 = `
 
 const salonBenefitsList1 = ` 
 <li><span class="benefit-check"><i
-      class="fa-solid fa-check"></i></span>Carta
+      class="fa-solid fa-check"></i></span>Carrrta
   de idoneidad gratuita para trámite de
   patente para apertura del salón de belleza
   (según lo dicta la reforma del reglamento N°
@@ -363,9 +363,16 @@ document.addEventListener('DOMContentLoaded', function () {
       var windowHeight = window.innerHeight;
       var elementTop = reveals[i].getBoundingClientRect().top;
       var elementVisible = 150;
-      if (elementTop < windowHeight - elementVisible) {
-        reveals[i].classList.add('active');
+
+      // Check if the screen width is above a certain threshold (e.g., 768 pixels)
+      if (window.innerWidth >= 768) {
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add('active');
+        } else {
+          reveals[i].classList.remove('active');
+        }
       } else {
+        // If the screen width is below the threshold, remove the active class
         reveals[i].classList.remove('active');
       }
     }

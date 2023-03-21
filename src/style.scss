@@ -1621,6 +1621,11 @@ footer{
     }
    }
 
+   .reveal {
+    transform: translateY(0px);
+    opacity: 1 !important;
+  }
+
    nav{
     padding: .4rem 0rem;
 
