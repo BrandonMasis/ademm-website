@@ -1,3 +1,5 @@
+import './style.scss';
+
 const showAnswerBtns = document.querySelectorAll('.show-answer');
 const faqItems = document.querySelectorAll('.faq-item');
 

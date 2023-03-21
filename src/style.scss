@@ -1090,7 +1090,7 @@ nav{
           
         }
         .right{
-            background-image: url(./images/requirements.webp);
+            background-image: url("../dist/images/requirements.webp");
             width: 22rem;
             height: 26rem;
             background-size: cover;
@@ -1342,7 +1342,7 @@ nav{
         
         display: flex;
         justify-content: center;
-        background-image: url(./images/about-us.webp);
+        background-image: url("../dist/images/about-us.webp");
         
         
             height: 27rem;
@@ -2061,19 +2061,19 @@ footer{
 
             ._benefit-option:nth-child(1){
                 &>div:nth-child(1){
-                    background-image: url(./images/mobile-benefits1.webp);
+                    background-image: url('../dist/images/mobile-benefits1.webp');
                     background-position: 0rem -3rem;
                 }
             }
             ._benefit-option:nth-child(2){
                 &>div:nth-child(1){
-                    background-image: url(./images/mobile-benefits2.webp);
+                    background-image: url('../dist/images/mobile-benefits2.webp');
                     background-position: 0rem -3rem;
                 }
             }
             ._benefit-option:nth-child(3){
                 &>div:nth-child(1){
-                    background-image: url(./images/mobile-benefits3.webp);
+                    background-image: url('../dist/images/mobile-benefits3.webp');
                     background-position: 0rem -3rem;
                 }
             }
