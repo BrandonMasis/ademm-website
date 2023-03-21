@@ -18,7 +18,7 @@
 
   --white:#FFFFFF;
   --darkText: #363949;
-  --lightText: #7A7A7A;
+  --lightText: #6b6b6b;
   
   --tab:#F6F8FC;
   --faq:#625F5F;
@@ -517,6 +517,23 @@ nav{
     }
 }
 
+.hollow-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 16px;
+    color: var(--white);
+    border: 1px solid var(--white) !important;
+    font-size: 16px;
+
+    &:hover{
+    
+        border: 1px solid var(--footer-text);
+        background-color: var(--light-accent);
+    } 
+}
+
 
 .hero-stats{
     display: flex;
@@ -1013,7 +1030,7 @@ nav{
 }
 
 .result-tag{
-    color: var(--darkText) !important;
+    color: var(--lightText) !important;
     width: fit-content !important;
     font-size: 14px !important; 
     font-family: 'DM Sans', sans-serif;
@@ -1091,27 +1108,8 @@ nav{
     margin-top: 8rem;
     height: 40rem;
 
-    .hollow-btn{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    
-        font-size: 16px;
-        color: var(--white);
-        border: 1px solid var(--white);
-    
-        
-    
-        
-    
-        
-    
-        &:hover{
-        
-            border: 1px solid var(--footer-text);
-            background-color: var(--light-accent);
-        } 
-    }
+  
+   
     
     .container{
         max-width: 100%;
@@ -2430,21 +2428,7 @@ footer{
     .tagline{
         font-size: 14px;
     }
-    .nav-bar{
-        
-        
-        .logo{
-         
-            
-            img{
-                width: 3rem !important;
-                height: auto;
-
-                animation-name: navTransition;
-                animation-duration: .2s;
-            }
-        }
-    }
+   
     #_beneficios{
         display: flex;
         width: 100%;

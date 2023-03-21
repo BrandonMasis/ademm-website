@@ -10,84 +10,6 @@ const searchMemberInput = document.querySelector('#search-members-input');
 const searchMemberResults = document.querySelector('.search-member-results');
 const totalMembers = document.querySelector('.total-members h2');
 
-const memberList = [
-  'Silvia Gonzalez Navarro',
-  'Joyce Beita',
-  'Alex Arias',
-  'Carolina Brenes',
-  'Flory Araya',
-  'Ivannia Montero',
-  'Ruth Serrano',
-  'Keylin Soto',
-  'Flor Batista Bastista',
-  'Juliana Meza',
-  'Yessenia (Apellido)',
-  'Armicio Cabezas Avalos',
-  'Elizabeth Peña Oporto',
-  'Gabriela Vargas Ramirez',
-  'Jessica Alvarez',
-  'Priscila',
-  'Lilian Morales',
-  'Cynthia Gomez Quiros',
-  'Victor Ureña',
-  'Yanis Serrano Gonzalez',
-  'Royner Campos',
-  'Mitzi Miranda',
-  'Karima Matarrita',
-  'Jessica Varela Rodriguez',
-  'Karla Cubillo',
-  'Lissette Peña Ulloa',
-  'Roxana Corella',
-  'Sherryl Campos Villalobos',
-  'Veronica Zumbado',
-  'Asly Garcia Granados',
-  'Dayana Porras Prieto',
-  'Karen Alpizar',
-  'Susan Zelaya',
-  'Pamela Perez',
-  'Kathia Mora Corrales',
-  'Adriana Solano Solano',
-  'Luisa Ramos',
-  'Magaly Mora Castro',
-  'María de los Angeles Martinez',
-  'Nayiri Lopez',
-  'Cynthia Mora Zuñiga',
-  'Ana Martinez',
-  'Daniela Guadamuz/Clementina Carabaca/Charlene Guadamuz/',
-  'Johnny Alejandro Madriz Aguilar',
-  'Esteban Barrantes Munoz',
-  'Ana Mailid Cedeño',
-  'Amyliz Academia Liseth Borge',
-  'Guillermo Gutierrez',
-  'Katheryne Cerdas Fonseca',
-  'Pamela Morera',
-  'Jeimy Arce',
-  'Elena Lizano',
-  'Esther Granados',
-  'Gabriela Quiros',
-  'Monica Matamoros',
-  'Kimberly M. Get',
-  'Ginger Barrantes',
-  'Isabel Vega Moya',
-  'Christian Chinchilla',
-  'Claudia Mora Araya',
-  'Joselyn Ramirez T',
-  'Roxana Alvarado',
-  'Mauren Novoa',
-  'Raquel Delgado',
-  'Hazel Boquin',
-  'Beatriz Sequeira',
-  'Yoheny Chavez Fonseca',
-  'Maria Saray Arias Varela',
-  'Ana Lady Marin',
-  'Joselin Blanco Sanchez',
-  'Karla Villareyna Salguera',
-  'Mariela Fonseca',
-  'Julio Jose Arce Rugama',
-  'Susana Romero',
-  'Ana Vielka Vargas San Lee',
-];
-
 // benefits
 const academyBenefitsList1 = `
 
@@ -321,33 +243,57 @@ _benefitOptions.forEach((option) => {
 
 //Search member
 
-searchMemberInput.addEventListener('input', () => {
-  const regex = new RegExp(`${searchMemberInput.value}`, 'i');
+// Fetch the member data from the JSON file
+fetch('members.json')
+  .then((response) => response.json())
+  .then((memberData) => {
+    // Use the member data to display member names
+    searchMemberInput.addEventListener('input', () => {
+      const regex = new RegExp(`${searchMemberInput.value}`, 'gi');
 
-  let results = memberList.filter((member) => member.match(regex));
+      let results = memberData.filter((member) => {
+        const codeString = member.code.toString();
+        return member.name.match(regex) || codeString.match(regex);
+      });
 
-  let resultHtml = '';
+      let resultHtml = '';
 
-  results.forEach((result) => {
-    resultHtml += `<div class="result"><h2>${result.replaceAll(
-      result.match(regex),
-      `<span class="highlighted-match">${result.match(regex)}</span>`
-    )}</h2><p class="result-tag">Miembro verificado</p></div>`;
-  });
+      results.forEach((result) => {
+        resultHtml += `<div class="result">
+          <div class="left">
+            <p class="result-tag">${result.country}</p>
+            <h2>${result.name.replaceAll(
+              regex,
+              `<span class="highlighted-match">$&</span>`
+            )}</h2>
+          </div>
 
-  searchMemberResults.innerHTML = resultHtml;
-  totalMembers.textContent = results.length;
-  if (totalMembers.textContent == 0) {
-    searchMemberResults.innerHTML = `<div class="result"><h2>No hay resultados para "<span class="highlighted-match">${searchMemberInput.value}</span>"</h2></div>`;
-  }
-  if (searchMemberInput.value == '') {
-    searchMemberResults.innerHTML = '';
+          <div class="right">
+            <p class="result-tag">${result.code
+              .toString()
+              .replaceAll(
+                regex,
+                `<span class="highlighted-match">$&</span>`
+              )}</p>
+          </div>
+        </div>`;
+      });
 
-    searchMemberInput.parentElement.classList.remove('open');
-  } else {
-    searchMemberInput.parentElement.classList.add('open');
-  }
-});
+      searchMemberResults.innerHTML = resultHtml;
+      totalMembers.textContent = results.length;
+      if (totalMembers.textContent == 0) {
+        searchMemberResults.innerHTML = `<div class="result"><h2>No hay resultados para "<span class="highlighted-match">${searchMemberInput.value}</span>"</h2></div>`;
+      }
+      if (searchMemberInput.value == '') {
+        searchMemberResults.innerHTML = '';
+
+        searchMemberInput.parentElement.classList.remove('open');
+      } else {
+        searchMemberInput.parentElement.classList.add('open');
+      }
+    });
+  })
+  .catch((error) => console.error(error));
 
 // FAQ
 document
