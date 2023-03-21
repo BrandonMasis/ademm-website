@@ -600,7 +600,8 @@ nav .nav-bar .logo img {
   display: flex;
   justify-content: center;
   margin-top: 4rem;
-  height: 39rem;
+  height: 80vh;
+  min-height: 40rem;
   align-items: flex-start;
 }
 #buscar-afiliados .small-text::selection, #buscar-afiliados .section-header::selection {
@@ -659,7 +660,6 @@ nav .nav-bar .logo img {
 #buscar-afiliados .section-header {
   color: var(--white);
   margin-bottom: 0.5rem;
-  margin-top: 8rem;
   width: 100%;
   text-align: center;
 }
@@ -1515,8 +1515,8 @@ footer .right .footer-social a i {
   #_beneficios ._benefits ._benefit-option > div:nth-child(1) h3 {
     color: var(--white);
     font-family: "DM Sans", sans-serif;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 700;
     max-width: 15rem;
   }
   #_beneficios ._benefits ._benefit-option > div:nth-child(1) i {
@@ -1801,6 +1801,7 @@ footer .right .footer-social a i {
     height: 140px;
     overflow: hidden;
     transition: 0.15s ease height;
+    border-bottom: 1px rgb(192, 190, 190) solid;
   }
   #_beneficios ._benefits ._benefit-option > div:nth-child(1) {
     display: flex;
@@ -1884,5 +1885,13 @@ footer .right .footer-social a i {
   }
   #hero .container .left .small-text {
     font-size: 16px;
+  }
+  #buscar-afiliados .container {
+    overflow: auto;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .section-header {
+    font-size: 22px !important;
   }
 }/*# sourceMappingURL=style.css.map */
