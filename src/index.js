@@ -72,9 +72,8 @@ const academyBenefitsList2 = `
 const studentBenefitsList1 = `
 
 <li><span class="benefit-check"><i
-      class="fa-solid fa-check"></i></span>Carta
-  de idoneidad gratuita al graduarte
-  en una academia avalada</li>
+      class="fa-solid fa-check"></i></span> Carta para trámite con instituciones de
+                ayuda social, para becas o ayudas económicas</li>
 <li>
   <span class="benefit-check"><i
       class="fa-solid fa-check"></i></span>
@@ -97,7 +96,7 @@ const studentBenefitsList1 = `
 
 const salonBenefitsList1 = ` 
 <li><span class="benefit-check"><i
-      class="fa-solid fa-check"></i></span>Carrrta
+      class="fa-solid fa-check"></i></span>Carta
   de idoneidad gratuita para trámite de
   patente para apertura del salón de belleza
   (según lo dicta la reforma del reglamento N°
@@ -148,11 +147,6 @@ const salonBenefitsList2 = `
 // }, 500);
 
 // body preload
-
-window.addEventListener('scroll', () => {
-  heroContainer.classList.toggle('afterSticky', window.scrollY > 0);
-  nav.classList.toggle('sticky', window.scrollY > 0);
-});
 
 benefitOption.forEach((option) => {
   option.addEventListener('click', () => {
@@ -246,7 +240,7 @@ _benefitOptions.forEach((option) => {
 //Search member
 
 // Fetch the member data from the JSON file
-fetch('members.json')
+fetch('membersBeta.json')
   .then((response) => response.json())
   .then((memberData) => {
     // Use the member data to display member names
@@ -338,7 +332,16 @@ window.onload = function () {
     menu_btn.classList.toggle('is-active');
     mobile_menu.classList.toggle('is-active');
   });
+
+  window.addEventListener('scroll', () => {
+    heroContainer.classList.toggle('afterSticky', window.scrollY > 0);
+    nav.classList.toggle('sticky', window.scrollY > 0);
+  });
 };
+
+window.addEventListener('load', function () {
+  document.body.style.display = 'flex';
+});
 
 const allMobile = document.querySelectorAll('.mobile-nav ul li a');
 allMobile.forEach((link) => {

@@ -65,8 +65,9 @@
 //   font-family: 'Lato', sans-serif;
 
 
+  
 body{
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center; 
 }
@@ -521,11 +522,12 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: fit-content;
     font-size: 16px;
     color: var(--white);
     border: 1px solid var(--white) !important;
     font-size: 16px;
+    text-align: center;
 
     &:hover{
     
@@ -1186,6 +1188,7 @@ nav{
             .afiliation-boxes{
                 display: flex;
                 gap: 1rem;
+                justify-content: center;
 
                 .price{ 
                     font-family: 'DM Sans', sans-serif;
@@ -1284,7 +1287,6 @@ nav{
     }
 
     .faq-answer-wrapper.open{
-        max-height: 300px;
         transition: .4s ease height;
     }
 
@@ -1488,9 +1490,14 @@ footer{
         }
         .footer-contact{
             display: flex;
+            flex-direction: column;
             
-            align-items: center;
-            gap: 5px;
+            &>div{
+                display: flex;
+                align-items: center;
+                gap: 5px;
+
+            }
             i{
                 color: var(--lightText);
             }
@@ -2611,10 +2618,13 @@ footer{
     .section-header{
         font-size: 22px !important;
     }
+    #afiliacion{
 
-    .hollow-btn{
-        i{
-            display: none;
+        .hollow-btn{
+            i{
+                display: none;
+                
+            }
         }
     }
  }

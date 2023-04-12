@@ -3,6 +3,17 @@
 
 <head>
 
+  <!-- Google tag (gtag.js) -->
+  <script async
+    src="https://www.googletagmanager.com/gtag/js?id=G-VS475L6GYE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-VS475L6GYE');
+  </script>
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport"
@@ -53,16 +64,17 @@
 
 
 
+
 </head>
 
-<body>
-
+<body style="display: none;">
+  <div id="loader" class="loader"></div>
 
   <!-- NAVIGATION -->
   <nav id="nav">
     <div class="nav-bar">
       <a class="logo" href="#hero">
-        <img src="./images/dummylogo.webp"
+        <img src="./images/smallerLogo.webp"
           alt="Logo de ademm internacional">
       </a>
 
@@ -355,8 +367,8 @@
               <li>
                 <span class="benefit-check"><i
                     class="fa-solid fa-check"></i></span>
-                Carta de idoneidad gratuita, al graduarte en
-                una academia avalada
+                Carta para trámite con instituciones de
+                ayuda social, para becas o ayudas económicas
               </li>
               <li>
                 <span class="benefit-check"><i
@@ -556,7 +568,8 @@
               pasaporte</li>
             <li class="small-text">Nombre y Dirección de la
               Academia</li>
-            <li class="small-text">Comprobante de pago**
+            <li class="small-text">Comprobante de pago de la
+              cuota de membresia
             </li>
           </ul>
         </div>
@@ -577,7 +590,7 @@
           allá y disfruta de los beneficios de ser un socio
           Ademm.</p>
         <div class="afiliation-boxes">
-          <a href="https://wa.me/message/QMKPV722WTEJG1"
+          <a href="https://wa.me/message/4MRF2LT7OYTDO1"
             class="btn hollow-btn">Contáctanos por WhatsApp
             <i class="fa-solid fa-chevron-right"></i></a>
         </div>
@@ -689,11 +702,15 @@
               <p class="faq-answer">
                 Puedes verificar si una academia está
                 avalada por ADEMM directamente desde nuestra
-                página web en la sección de verificación en
-                línea. Simplemente busca por el nombre del
+                página web en la sección de <span><a
+                    href="#buscar-afiliados">verificación en
+                    línea.</a></span> Simplemente busca por
+                el nombre del
                 director o introduce el código de
                 verificación que se le proporciona a la
-                academia cuando se certifica. Es importante
+
+                academia cuando se certifica. <br><br>*Es
+                importante
                 tener en cuenta que si el socio o academia
                 se registró hace menos de un mes, es posible
                 que aún no aparezca en los resultados de
@@ -749,8 +766,9 @@
       <div class="left">
         <h2 class="footer-header">ADEMM</h2>
         <p class="footer-text">
-          Asociación Internacional de Estilistas y
-          Manicuristas Profesionales.
+          Asociación Internacional de Estilistas,
+          Manicuristas, Maquillistas y Afines (Barbería,
+          Estética, Microblading, Pestañas, entre otros.)
         </p>
         <a href="#buscar-afiliados"
           class="hollow-btn btn">Ver academias
@@ -774,11 +792,18 @@
         <h2 class="footer-header">Contacto</h2>
         <div>
           <div class="footer-contact">
-            <i class="fa-solid fa-phone"></i>
-            <p class="footer-text">+506 7190 8888</p>
+            <div>
+              <i class="fa-solid fa-phone"></i>
+              <p class="footer-text">+506 7190 8888</p>
+            </div>
+            <div>
+              <i class="fa-solid fa-envelope"></i>
+              <p class="footer-text">info@ademmcr.com</p>
+            </div>
+
           </div>
           <div class="footer-social">
-            <a href="https://wa.me/message/QMKPV722WTEJG1"
+            <a href="https://wa.me/message/4MRF2LT7OYTDO1"
               target="_blank">
               link to Whatsapp
               <i class="fa-brands fa-square-whatsapp"></i>
