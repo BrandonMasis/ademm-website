@@ -240,7 +240,7 @@ _benefitOptions.forEach((option) => {
 //Search member
 
 // Fetch the member data from the JSON file
-fetch('membersBeta.json')
+fetch('membersApril23.json')
   .then((response) => response.json())
   .then((memberData) => {
     // Use the member data to display member names
