@@ -73,7 +73,7 @@ const studentBenefitsList1 = `
 
 <li><span class="benefit-check"><i
       class="fa-solid fa-check"></i></span> Carta para trámite con instituciones de
-                ayuda social, para becas o ayudas económicas</li>
+                ayuda social para becas o ayudas económicas</li>
 <li>
   <span class="benefit-check"><i
       class="fa-solid fa-check"></i></span>
@@ -240,7 +240,7 @@ _benefitOptions.forEach((option) => {
 //Search member
 
 // Fetch the member data from the JSON file
-fetch('membersApril23.json')
+fetch('apr14members23.json')
   .then((response) => response.json())
   .then((memberData) => {
     // Use the member data to display member names
