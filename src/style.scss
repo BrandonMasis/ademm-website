@@ -926,39 +926,40 @@ nav{
             &:focus{
                 outline: none;
             }
-        }
-
-        .total-members{
-          
-            font-family: 'DM Sans', sans-serif;
-            color: var(--faq);
-         
-            background-color: var(--white);
-            display: flex;
-            justify-content: center;
-            align-items: center;
             border-radius: 0 4px 4px 0;
-            width: fit-content;
-            user-select: none;
-            padding-right: 1.5rem;
-            padding-left: 1.5rem;
-            
-            
-            h2{
-                display: none;
-                justify-content: center;
-                align-items: center;
-                font-size: 14px;
-                background-color: var(--total-box);
-                color: var(--total-number);
-                width: 25px;
-                height: 25px;
-                text-align: center;
-                border-radius: 4px;
-                
-            }
-
         }
+
+        // .total-members{
+          
+        //     font-family: 'DM Sans', sans-serif;
+        //     color: var(--faq);
+         
+        //     background-color: var(--white);
+        //     display: flex;
+        //     justify-content: center;
+        //     align-items: center;
+        //     border-radius: 0 4px 4px 0;
+        //     width: fit-content;
+        //     user-select: none;
+        //     padding-right: 1.5rem;
+        //     padding-left: 1.5rem;
+            
+            
+        //     h2{
+        //         display: none;
+        //         justify-content: center;
+        //         align-items: center;
+        //         font-size: 14px;
+        //         background-color: var(--total-box);
+        //         color: var(--total-number);
+        //         width: 25px;
+        //         height: 25px;
+        //         text-align: center;
+        //         border-radius: 4px;
+                
+        //     }
+
+        // }
     }
 
 
