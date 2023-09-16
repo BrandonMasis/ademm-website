@@ -190,7 +190,7 @@
         "country": "Costa Rica"
     },
     {
-        "name": "Cynthia Mora Zuñiga ",
+        "name": "Cinthya Mora Zuñiga ",
         "code": "100376",
         "country": "Costa Rica"
     },
@@ -230,7 +230,7 @@
         "country": "Costa Rica"
     },
     {
-        "name": "Katheryne Cerdas Fonseca ",
+        "name": "Katherine Cerdas Fonseca ",
         "code": "100380",
         "country": "Costa Rica"
     },
@@ -450,11 +450,6 @@
         "country": "Costa Rica"
     },
     {
-        "name": "Instituto IETEC ",
-        "code": "100146",
-        "country": "Costa Rica"
-    },
-    {
         "name": "Grettel Espinoza Paniagua ",
         "code": "100149",
         "country": "Costa Rica"
@@ -545,11 +540,6 @@
         "country": "Costa Rica"
     },
     {
-        "name": "Erlyn Sequeira ",
-        "code": "100491",
-        "country": "Costa Rica"
-    },
-    {
         "name": "Instituto IMEC",
         "code": "100310",
         "country": "Costa Rica"
@@ -582,11 +572,6 @@
     {
         "name": "Maricruz Chavarria ",
         "code": "100407",
-        "country": "Costa Rica"
-    },
-    {
-        "name": "Marianela Badilla ",
-        "code": "100409",
         "country": "Costa Rica"
     },
     {
@@ -750,7 +735,7 @@
         "country": "Costa Rica"
     },
     {
-        "name": "Scarlet Mariam Herandez Gomez",
+        "name": "Scarlet Mariam Hernández Gómez",
         "code": "100464",
         "country": "Costa Rica"
     },
@@ -760,18 +745,8 @@
         "country": "Panamá"
     },
     {
-        "name": "Yuleysi Martinez Gomez",
-        "code": "100474",
-        "country": "Costa Rica"
-    },
-    {
         "name": "Karol Tatiana Rojas Quesada",
         "code": "100308",
-        "country": "Costa Rica"
-    },
-    {
-        "name": "María Paula Vargas Mora",
-        "code": "100469",
         "country": "Costa Rica"
     },
     {
@@ -1197,6 +1172,66 @@
     {
         "name": "Ana Iris Fernández Castro",
         "code": "200815",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Kimaury Kelly Guarin",
+        "code": "200821",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Dreadlockden",
+        "code": "200820",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Ana Yanci Ramirez Quesada",
+        "code": "200822",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Rebeca Melissa Arce Brenes",
+        "code": "200823",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Linsey Irina Mora Rojas",
+        "code": "200824",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Grabriela Rosaura Martinez Castro",
+        "code": "200825",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Marcia Cordero Zamora",
+        "code": "200826",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Maria Fernanda Monge Espinoza",
+        "code": "200830",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Nidia Mora Araya",
+        "code": "200831",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Jordan Jesus Granados Arguedas",
+        "code": "200828",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Angie Valverde Román ",
+        "code": "200832",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Primorosas Berrocal",
+        "code": "200833",
         "country": "Costa Rica"
     }
 ]

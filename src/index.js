@@ -240,7 +240,7 @@ _benefitOptions.forEach((option) => {
 //Search member
 
 function updateMembers() {
-  fetch('./m_ago08_2023.json')
+  fetch('./m_sep16_2023.json')
     .then((response) => response.json())
     .then((memberData) => {
       // Use the member data to display member names
