@@ -163,7 +163,7 @@ nav{
     min-height: 100vh;
     
 
-    z-index: 4;
+    z-index: 9;
     background-color: white;
     padding-top: 120px;
 	transition: 0.4s;
@@ -1636,10 +1636,13 @@ footer{
 
    nav{
     padding: .4rem 0rem;
-
+    
     
    }
 
+   *{
+    -webkit-tap-highlight-color:#dadada49 !important;
+   }
    .section-header{
     font-size: 28px;
    }
