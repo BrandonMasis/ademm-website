@@ -500,11 +500,6 @@
         "country": "Costa Rica"
     },
     {
-        "name": "Flor Fernandez",
-        "code": "100446",
-        "country": "Costa Rica"
-    },
-    {
         "name": "Flora Morales Orozco",
         "code": "100459",
         "country": "Costa Rica"
@@ -547,11 +542,6 @@
     {
         "name": "Milagro Barrantes ",
         "code": "100371",
-        "country": "Costa Rica"
-    },
-    {
-        "name": "Sherry Karina Castillo Caballero",
-        "code": "100387",
         "country": "Costa Rica"
     },
     {
@@ -1232,6 +1222,51 @@
     {
         "name": "Primorosas Berrocal",
         "code": "200833",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Stephanie Castro López ",
+        "code": "200834",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Academia Mia Secret",
+        "code": "200835",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Jeysel Ramirez Calderón ",
+        "code": "100101",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Jennifer Priscilla Leon Juarez",
+        "code": "100368",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Jehovana Lorena Martínez Caton",
+        "code": "200840",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Nataly Alexandra Hernández Tencio ",
+        "code": "200841",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Cristina Montero Rojas",
+        "code": "200842",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Johnny Mendoza Obando",
+        "code": "100477",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Nancy Nicole Alvarado Rodriguez",
+        "code": "200845",
         "country": "Costa Rica"
     }
 ]

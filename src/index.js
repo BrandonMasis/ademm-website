@@ -148,6 +148,8 @@ const salonBenefitsList2 = `
 
 // body preload
 
+const benefitOptions = document.querySelectorAll('.benefit-option');
+
 benefitOption.forEach((option) => {
   option.addEventListener('click', () => {
     benefitOption.forEach((option) => {
@@ -240,7 +242,7 @@ _benefitOptions.forEach((option) => {
 //Search member
 
 function updateMembers() {
-  fetch('./m_sep16_2023.json')
+  fetch('./json/m_oct10_2023.json')
     .then((response) => response.json())
     .then((memberData) => {
       // Use the member data to display member names
@@ -293,60 +295,11 @@ function updateMembers() {
   console.log('working');
 }
 
-// Update members every 10 seconds
-setInterval(updateMembers, 10000);
+// Call the function to initialize
+updateMembers();
 
-// // Fetch the member data from the JSON file
-// fetch('members.json')
-//   .then((response) => response.json())
-//   .then((memberData) => {
-//     // Use the member data to display member names
-//     searchMemberInput.addEventListener('input', () => {
-//       const regex = new RegExp(`${searchMemberInput.value}`, 'gi');
-
-//       let results = memberData.filter((member) => {
-//         const codeString = member.code.toString();
-//         return member.name.match(regex) || codeString.match(regex);
-//       });
-
-//       let resultHtml = '';
-
-//       results.forEach((result) => {
-//         resultHtml += `<div class="result">
-//           <div class="left">
-//             <p class="result-tag">${result.country}</p>
-//             <h2>${result.name.replaceAll(
-//               regex,
-//               `<span class="highlighted-match">$&</span>`
-//             )}</h2>
-//           </div>
-
-//           <div class="right">
-//             <p class="result-tag">${result.code
-//               .toString()
-//               .replaceAll(
-//                 regex,
-//                 `<span class="highlighted-match">$&</span>`
-//               )}</p>
-//           </div>
-//         </div>`;
-//       });
-
-//       searchMemberResults.innerHTML = resultHtml;
-//       totalMembers.textContent = results.length;
-//       if (totalMembers.textContent == 0) {
-//         searchMemberResults.innerHTML = `<div class="result"><h2>No hay resultados para "<span class="highlighted-match">${searchMemberInput.value}</span>"</h2></div>`;
-//       }
-//       if (searchMemberInput.value == '') {
-//         searchMemberResults.innerHTML = '';
-
-//         searchMemberInput.parentElement.classList.remove('open');
-//       } else {
-//         searchMemberInput.parentElement.classList.add('open');
-//       }
-//     });
-//   })
-//   .catch((error) => console.error(error));
+// // Update members every 10 seconds
+// setInterval(updateMembers, 10000);
 
 // FAQ
 document
@@ -440,5 +393,3 @@ document.addEventListener('DOMContentLoaded', function () {
 
   window.addEventListener('scroll', reveal);
 });
-
-updateMembers();
