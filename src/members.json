@@ -1,12 +1,7 @@
-﻿[
+[
     {
         "name": "Silvia Gonzalez Navarro",
         "code": "100365",
-        "country": "Costa Rica"
-    },
-    {
-        "name": "Alex Arias ",
-        "code": "100369",
         "country": "Costa Rica"
     },
     {
@@ -17,11 +12,6 @@
     {
         "name": "Flory Araya ",
         "code": "100393",
-        "country": "Costa Rica"
-    },
-    {
-        "name": "Ivannia Montero",
-        "code": "100431",
         "country": "Costa Rica"
     },
     {
@@ -42,11 +32,6 @@
     {
         "name": "Juliana Meza ",
         "code": "100403",
-        "country": "Costa Rica"
-    },
-    {
-        "name": "Academia Fusión",
-        "code": "100671",
         "country": "Costa Rica"
     },
     {
@@ -92,11 +77,6 @@
     {
         "name": "Yanis Serrano Gonzalez",
         "code": "100400",
-        "country": "Costa Rica"
-    },
-    {
-        "name": "Royner Campos",
-        "code": "100470",
         "country": "Costa Rica"
     },
     {
@@ -152,11 +132,6 @@
     {
         "name": "Karen Alpizar",
         "code": "100415",
-        "country": "Costa Rica"
-    },
-    {
-        "name": "Pamela Perez",
-        "code": "100424",
         "country": "Costa Rica"
     },
     {
@@ -265,11 +240,6 @@
         "country": "Costa Rica"
     },
     {
-        "name": "Kimberly M. Get ",
-        "code": "100396",
-        "country": "Costa Rica"
-    },
-    {
         "name": "Ginger Barrantes",
         "code": "100381",
         "country": "Costa Rica"
@@ -370,11 +340,6 @@
         "country": "Costa Rica"
     },
     {
-        "name": "Lidia Maria Sojo Miranda/ Polette Alejandra Sojo Miranda",
-        "code": "100503",
-        "country": "Costa Rica"
-    },
-    {
         "name": "Sara Melisa Chana Badilla ",
         "code": "100536",
         "country": "Costa Rica"
@@ -395,11 +360,6 @@
         "country": "Costa Rica"
     },
     {
-        "name": "Melissa Orellana Bustamante",
-        "code": "100391",
-        "country": "Costa Rica"
-    },
-    {
         "name": "Make up by Laura",
         "code": "100679",
         "country": "Costa Rica"
@@ -412,11 +372,6 @@
     {
         "name": "Rony Leitón Sequeira",
         "code": "100780",
-        "country": "Costa Rica"
-    },
-    {
-        "name": "Nelson Gonzáles Bolaños ",
-        "code": "100783",
         "country": "Costa Rica"
     },
     {
@@ -510,7 +465,7 @@
         "country": "Costa Rica"
     },
     {
-        "name": "Francisco Soto Febelle",
+        "name": "Francisco Soto FK Salon y Academia",
         "code": "100456",
         "country": "Costa Rica"
     },
@@ -530,23 +485,8 @@
         "country": "Costa Rica"
     },
     {
-        "name": "Maria Gabriela Diaz Villalobos",
-        "code": "100350",
-        "country": "Costa Rica"
-    },
-    {
         "name": "Instituto IMEC",
         "code": "100310",
-        "country": "Costa Rica"
-    },
-    {
-        "name": "Milagro Barrantes ",
-        "code": "100371",
-        "country": "Costa Rica"
-    },
-    {
-        "name": "Silvia Elena Oses",
-        "code": "100389",
         "country": "Costa Rica"
     },
     {
@@ -562,11 +502,6 @@
     {
         "name": "Maricruz Chavarria ",
         "code": "100407",
-        "country": "Costa Rica"
-    },
-    {
-        "name": "Karla Barboza ",
-        "code": "100468",
         "country": "Costa Rica"
     },
     {
@@ -602,11 +537,6 @@
     {
         "name": "Karina Araya ",
         "code": "100406",
-        "country": "Costa Rica"
-    },
-    {
-        "name": "Katherine Lacayo Mora",
-        "code": "100527",
         "country": "Costa Rica"
     },
     {
@@ -657,11 +587,6 @@
     {
         "name": "Valerie Calderón ",
         "code": "100687",
-        "country": "Costa Rica"
-    },
-    {
-        "name": "Tracy Lopez",
-        "code": "100422",
         "country": "Costa Rica"
     },
     {
@@ -740,11 +665,6 @@
         "country": "Costa Rica"
     },
     {
-        "name": "Isabel Bogantes",
-        "code": "100405",
-        "country": "Costa Rica"
-    },
-    {
         "name": "Valeria Artavia Sanchez",
         "code": "100410",
         "country": "Costa Rica"
@@ -795,11 +715,6 @@
         "country": "Costa Rica"
     },
     {
-        "name": "Jocelin Navarro Cambronero ",
-        "code": "100476",
-        "country": "Costa Rica"
-    },
-    {
         "name": "Olga Selena Gomez Ruiz",
         "code": "100453",
         "country": "Costa Rica"
@@ -820,11 +735,6 @@
         "country": "Costa Rica"
     },
     {
-        "name": "Irma Perez Avila ",
-        "code": "100490",
-        "country": "Costa Rica"
-    },
-    {
         "name": "Sirleni Mora Acuña",
         "code": "100492",
         "country": "Costa Rica"
@@ -832,16 +742,6 @@
     {
         "name": "Marianela Molina Guerrero",
         "code": "100502",
-        "country": "Costa Rica"
-    },
-    {
-        "name": "Maria Javiera Gomez Cornejo",
-        "code": "100525",
-        "country": "Costa Rica"
-    },
-    {
-        "name": "Daniela Gomez Melendez",
-        "code": "100501",
         "country": "Costa Rica"
     },
     {
@@ -1130,11 +1030,6 @@
         "country": "Costa Rica"
     },
     {
-        "name": "Susana Elisa Alpízar Ramirez",
-        "code": "200811",
-        "country": "Costa Rica"
-    },
-    {
         "name": "Katherine Cabezas Quesada",
         "code": "200808",
         "country": "Costa Rica"
@@ -1190,7 +1085,7 @@
         "country": "Costa Rica"
     },
     {
-        "name": "Grabriela Rosaura Martinez Castro",
+        "name": "Gabriela Rosaura Martinez Castro",
         "code": "200825",
         "country": "Costa Rica"
     },
@@ -1267,6 +1162,321 @@
     {
         "name": "Nancy Nicole Alvarado Rodriguez",
         "code": "200845",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Eternelle Academia ",
+        "code": "200853",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Viridiana Quesada Mora",
+        "code": "200854",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Alexandra Cordero Garita",
+        "code": "200856",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Gilma Yamilet  Duarte Duarte ",
+        "code": "200901",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Andrea León Lopez",
+        "code": "200902",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Jackelin Vanessa Duarte Retana",
+        "code": "200903",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Yendry Garro Bejarano",
+        "code": "200904",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Keylor Rojas Zeledón",
+        "code": "200905",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "María de los Ángeles Blanco Durán ",
+        "code": "200906",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "María Odilié Calderón Hernández",
+        "code": "200907",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Johana Gabriela Lara Jiménez ",
+        "code": "200908",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Andrés Navarro Monestel",
+        "code": "200909",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Estefania Quesada Morales",
+        "code": "200855",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Melania Guadalupe Brenes Masis",
+        "code": "100534",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Maria Fernanda Mendoza Vindas",
+        "code": "200857",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Nahomy Olivar ",
+        "code": "200858",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Karla Vargas Ceciliano",
+        "code": "201000",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Silvia Fonseca Fallas",
+        "code": "201001",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Laura Maria Herrera Martinez",
+        "code": "201002",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Laura Magdalena Guadamuz Porras",
+        "code": "201003",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Mariam Herrera Sanchez",
+        "code": "201004",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Brows and Lashes Academy By Sof",
+        "code": "201005",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Lucrecia Gonzalez Cordoba",
+        "code": "201006",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Maria Gabriela Abarca Ugalde",
+        "code": "201007",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Escuela de Masoterapia IPAC",
+        "code": "201008",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Andrea Rivera Torres",
+        "code": "201009",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Maddelin Isabel Guadamuz Gutierrez",
+        "code": "201010",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Kathia Vanessa Jimenez Loria",
+        "code": "201011",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Leiriana Mena Ureña",
+        "code": "201012",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Alina Maria Alvarado Nuñez",
+        "code": "201013",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Rosa Angelica Carrillo Lumbi",
+        "code": "201014",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Rubieth Araya Mendez",
+        "code": "201015",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Sindy de los Angeles Valverde Campos",
+        "code": "201016",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Kelvin M. Nicaragua",
+        "code": "201017",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Dinia Solis Salazar",
+        "code": "201018",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Keilyn Cruz Gonzalez ",
+        "code": "201019",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Juniette Hernandez Velasquez",
+        "code": "100178",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Ana Lourdes Morales Fajardo ",
+        "code": "201020",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Raquel Montoya Solano",
+        "code": "201021",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Ana Lucia Marin Gattgens",
+        "code": "201022",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Veronica Duran Brenes ",
+        "code": "201023",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Hans Rodriguez Campos ",
+        "code": "201024",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Carolina Madrigal Brenes",
+        "code": "201025",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Rebeca Leal Rodriguez",
+        "code": "201026",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Reina Gutierrez Romero",
+        "code": "201027",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Yerlin Daniela Espinoza Navarro",
+        "code": "201028",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Wendy Rebeca Araya Castro",
+        "code": "201029",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Vanessa Campos Herrera",
+        "code": "201030",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Leslie Yineth Garcia Sequeira ",
+        "code": "201031",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Amanda Aguilar Zamora",
+        "code": "201032",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Karol Tatiana Palacios Montoya",
+        "code": "201033",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Mauren Garcia Jimenez ",
+        "code": "201034",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Neffer Mata Sandi",
+        "code": "201035",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Rebeca Mena Mena ",
+        "code": "100315",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Diney Chaves Fallas",
+        "code": "100529",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Maria Elena Rosales Martell",
+        "code": "201036",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Dahianna Mendoza Mata",
+        "code": "100475",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Royner Campos",
+        "code": "100470",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Pamela Perez",
+        "code": "100424",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Rosario Amador Marenco",
+        "code": "201037",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Deylin Tatiana Villalobos Blanco",
+        "code": "201038",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Academia de Belleza HEBRÓN ",
+        "code": "201040",
+        "country": "Costa Rica"
+    },
+    {
+        "name": "Irma Perez Avila ",
+        "code": "100490",
         "country": "Costa Rica"
     }
 ]

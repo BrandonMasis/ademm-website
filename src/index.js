@@ -242,7 +242,7 @@ _benefitOptions.forEach((option) => {
 //Search member
 
 function updateMembers() {
-  fetch('./json/m_oct10_2023.json')
+  fetch(`./json/${__HASHED_FILENAME__}`)
     .then((response) => response.json())
     .then((memberData) => {
       // Use the member data to display member names

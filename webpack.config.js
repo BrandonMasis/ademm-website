@@ -1,12 +1,13 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const { WebpackManifestPlugin } = require('webpack-manifest-plugin');
+const webpack = require('webpack');
+const fs = require('fs');
 
 module.exports = {
   entry: './src/index.js',
   output: {
-    filename: 'main.[contenthash].js',
+    filename: 'main.[contenthash].js', // Using [contenthash] for hashing
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
@@ -20,7 +21,7 @@ module.exports = {
         test: /\.(png|svg|jpg|jpeg|gif|webp)$/i,
         type: 'asset/resource',
         generator: {
-          filename: 'images/[name][ext]',
+          filename: 'images/[name][contenthash].[ext]', // Using [contenthash] for hashing
         },
       },
       {
@@ -44,10 +45,7 @@ module.exports = {
           from: './src/sitemap_index.xml',
           to: 'sitemap_index.xml',
         },
-        {
-          from: './src/.htaccess',
-          to: '.htaccess',
-        },
+
         {
           from: './src/favicon',
           to: 'favicon',
@@ -61,17 +59,13 @@ module.exports = {
           to: 'images',
         },
         {
-          from: './src/**/*.json',
-          to({ absoluteFilename }) {
-            // Preserve the relative path and file name for JSON files
-            const relativePath = path.relative(
-              path.join(__dirname, 'src'),
-              absoluteFilename
-            );
-            return path.join('json', relativePath);
-          },
+          from: './src/*.json',
+          to: 'json/[name].[contenthash].json', // Using [contenthash] for hashing
         },
       ],
+    }),
+    new webpack.DefinePlugin({
+      __HASHED_FILENAME__: JSON.stringify(fs.readdirSync('./dist/json/')[0]), // Get the first filename in the 'dist/json' directory
     }),
   ],
 };
